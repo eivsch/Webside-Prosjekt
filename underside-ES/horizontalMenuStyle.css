@@ -1,9 +1,10 @@
 /* Visit http://www.menucool.com/horizontal/javascript-menu for source code and other menu CSS templates */
 
+
 #sse3
 {
     background-color: #999;
-    height: 50px;
+    height: 40px;
     clear:both;
     text-align:center;/*For IE5 or IE No DOCTYPE*/
     border-radius: 4px;
@@ -28,7 +29,7 @@
 #sses3 li
 {
     background: #F90;
-    line-height: 50px;
+    line-height: 40px;
     position: relative;
     overflow: hidden;/*used to hide slip*/
     z-index: 0;
