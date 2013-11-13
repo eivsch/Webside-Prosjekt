@@ -1,0 +1,81 @@
+
+
+@font-face {
+
+    font-family: bonvenocflight;
+    src: url('bilder/BonvenoCF-Light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+#logo {
+	width: 500px;
+	height: 80px;
+	background-color: orange;
+}
+td{
+border: 2px solid #000;
+background-color: orange;
+}
+#blokk1{
+	width: 50px;
+	height: 70px;
+	border: 2px solid #000;
+	float: left;
+	background-color: red;
+}
+
+#blokk2{
+	width: 30px;
+	height: 50px;
+	border: 2px solid #000;
+	float: left;
+	background-color: blue;
+	margin-right: 10px;
+}
+
+#tre{
+	display: inline-block; 
+	font-size: 4em;
+	vertical-align: 7px;
+	font-family: bonvenocflight, helvetica, arial;
+	
+}
+#d {
+	font-size: 4em;
+	vertical-align: 7px;
+	font-family: bonvenocflight, helvetica, arial;
+	font-weight: bold;
+	display: inline-block; 
+    -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+    -moz-transform: matrix(-1, 0, 0, 1, 0, 0);
+    -o-transform: matrix(-1, 0, 0, 1, 0, 0);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+#dott{
+
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	background-color: red;
+	display: inline-block;
+	vertical-align: 20px;
+}
+
+#prin{
+	
+	font-size: 3em;
+	vertical-align: 7px;
+	font-family: bonvenocflight, helvetica, arial;
+	
+}
+
+
+#t{
+font-size: 4em;
+color: #fff;
+}
