@@ -3,13 +3,32 @@
 	<head>
 		<title>3D-direktoratet, din informasjonskilde til 3D-printing</title>
 		<link rel="stylesheet" title="main" type="text/css" href="horizontalMenuStyle.css">
+		<link rel="stylesheet" title="main" type="text/css" href="forslag.css">
 		<script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script charset="utf-8" src="horizontalMenuScript.js"></script>
 	</head>
 	<body>
+		<script>
+			$(document).ready(function(){
+			$('#normal').attr("disabled",true);
+			$('#hemma').click(function(){
+			$(this).attr("disabled",true);
+			$('#alpha').css('font-size', '+=10');
+			$('#alpha').css('font-family', 'sans-serif');
+			$('#normal').removeAttr("disabled");
+			});
+			$('#normal').click(function(){
+			$('#alpha').css('font-size', '-=10');
+			$('#alpha').css('font-family', 'Times New Roman');
+			$('#hemma').removeAttr("disabled");
+			});
+			});
+		</script>
+		<div id="header">
 		<header>
 			<h1>3D-direktoratet</h1>
-			<p>Velkommen til våre nettsider!</p>
+			<button id="normal">Vanlig</button>
+			<button id="hemma">Universell utforming</button>
 		</header>
 		<nav id="sse3">
 		<div id="sses3">
@@ -20,6 +39,7 @@
 				<li><a href="index.php?p="></a></li>
 			</ul>
 		</nav>
+		</div>
 		<div id="content">
 
 			<?php
