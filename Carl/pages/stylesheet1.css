@@ -1,0 +1,299 @@
+body {
+    font-family: helvetica;
+    background:white;
+    color: rgb(197, 200, 198);
+}
+h1 {
+    color: rgb(95, 137, 172);
+}
+#test {
+    background:rgb(29, 31, 33);
+    position: absolute;
+    top:100px;
+    left:60px;
+    right:60px;
+    bottom:-100px;
+}
+#design1 {
+    border: 2px solid rgb(181, 189, 104);
+    background-color: rgb(40, 42, 46);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    top:20px;
+    left: 20px;
+    margin-right: 700px;
+    width: 350px;
+    height: 290px;
+    
+}
+#bilde1 {
+    position: absolute;
+    top:25px;
+    left:250px;
+}
+#tekst1 {
+    position: absolute;
+    left:10px;
+    right:160px;
+    top:35px;
+}
+#lastned1 {
+  display: block;
+  width:75px;
+  height: 25px;
+  background: #4E9CAF;
+  padding: 5px 10px 10px 5px;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  position: relative;
+  top:170px;
+  left:1px;
+}
+#tekstA {
+    position: relative;
+    top:-12px;
+    left:3px;
+    color:white;
+}
+
+
+
+
+#design2 {
+    border: 2px solid rgb(181, 189, 104);
+    background-color: rgb(40, 42, 46);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    top:-284px;
+    left: 425px;
+    margin-right: 700px;
+    width: 350px;
+    height: 290px;
+    
+}
+#bilde2 {
+    position: absolute;
+    top:25px;
+    left:250px;
+}
+#tekst2 {
+    position: absolute;
+    left:10px;
+    right:160px;
+    top:35px;
+}
+#lastned2 {
+    display: block;
+    width:75px;
+    height: 25px;
+    background: #4E9CAF;
+    padding: 5px 10px 10px 5px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    top:170px;
+    left:1px;
+}
+#tekstB {
+    position: relative;
+    top:-12px;
+    left:3px;
+    color:white;
+}
+
+
+#design3 {
+    border: 2px solid rgb(181, 189, 104);
+    background-color: rgb(40, 42, 46);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    top:-588px;
+    left: 830px;
+    margin-right: 700px;
+    width: 350px;
+    height: 290px;
+    
+}
+#bilde3 {
+    position: absolute;
+    top:25px;
+    left:250px;
+}
+#tekst3 {
+    position: absolute;
+    left:10px;
+    right:160px;
+    top:35px;
+}
+#lastned3 {
+    display: block;
+    width:75px;
+    height: 25px;
+    background: #4E9CAF;
+    padding: 5px 10px 10px 5px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    top:170px;
+    left:1px;
+}
+#tekstC {
+    position: relative;
+    top:-12px;
+    left:3px;
+    color:white;
+}
+
+
+
+#design4 {
+    border: 2px solid rgb(181, 189, 104);
+    background-color: rgb(40, 42, 46);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    top:-566px;
+    left: 20px;
+    margin-right: 700px;
+    width: 350px;
+    height: 290px;
+    
+}
+#bilde4 {
+    position: absolute;
+    top:25px;
+    left:250px;
+}
+#tekst4 {
+    position: absolute;
+    left:10px;
+    right:160px;
+    top:35px;
+}
+#lastned4 {
+    display: block;
+    width:75px;
+    height: 25px;
+    background: #4E9CAF;
+    padding: 5px 10px 10px 5px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    top:170px;
+    left:1px;
+}
+#tekstD {
+    position: relative;
+    top:-12px;
+    left:3px;
+    color:white;
+}
+
+
+#design5 {
+    border: 2px solid rgb(181, 189, 104);
+    background-color: rgb(40, 42, 46);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    top:-870px;
+    left: 425px;
+    margin-right: 700px;
+    width: 350px;
+    height: 290px;
+    
+}
+#bilde5 {
+    position: absolute;
+    top:25px;
+    left:250px;
+}
+#tekst5 {
+    position: absolute;
+    left:10px;
+    right:160px;
+    top:35px;
+}
+#lastned5 {
+    display: block;
+    width:75px;
+    height: 25px;
+    background: #4E9CAF;
+    padding: 5px 10px 10px 5px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    top:170px;
+    left:1px;
+}
+#tekstE {
+    position: relative;
+    top:-12px;
+    left:3px;
+    color:white;
+}
+
+
+#design6 {
+    border: 2px solid rgb(181, 189, 104);
+    background-color: rgb(40, 42, 46);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    top:-1174px;
+    left: 830px;
+    margin-right: 700px;
+    width: 350px;
+    height: 290px;
+    
+}
+#bilde6 {
+    position: absolute;
+    top:25px;
+    left:250px;
+}
+#tekst6 {
+    position: absolute;
+    left:10px;
+    right:160px;
+    top:35px;
+}
+#lastned6 {
+    display: block;
+    width:75px;
+    height: 25px;
+    background: #4E9CAF;
+    padding: 5px 10px 10px 5px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    top:170px;
+    left:1px;
+}
+#tekstF {
+    position: relative;
+    top:-12px;
+    left:3px;
+    color:white;
+}

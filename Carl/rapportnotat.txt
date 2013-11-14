@@ -1,0 +1,6 @@
+Milepæl
+
+Basic gikk greit, mens sånne ting som implementering og ekstrating tok tid.
+Easteregg tar mer tid enn vi trodde.
+
+Milepælsmålene ble stort sett overholdt, mens JQuery har tatt tid siden vi oppdaget at noe mer trengtes og andre greier trengtes ikke
