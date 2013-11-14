@@ -20,6 +20,7 @@
 			$('#normal').click(function(){
 			$('#alpha').css('font-size', '-=10');
 			$('#alpha').css('font-family', 'Times New Roman');
+			$('#normal').attr("disabled",true);
 			$('#hemma').removeAttr("disabled");
 			});
 			});
