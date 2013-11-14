@@ -2,10 +2,10 @@
 <html>
 	<head>
 		<title>3D-direktoratet, din informasjonskilde til 3D-printing</title>
-		<link rel="stylesheet" title="main" type="text/css" href="horizontalMenuStyle.css">
-		<link rel="stylesheet" title="main" type="text/css" href="forslag.css">
+		<link rel="stylesheet" title="main" type="text/css" href="styles/external_styles/horizontalMenuStyle.css">
+		<link rel="stylesheet" title="main" type="text/css" href="styles/forslag.css">
 		<script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		<script charset="utf-8" src="horizontalMenuScript.js"></script>
+		<script charset="utf-8" src="scripts/external_scripts/horizontalMenuScript.js"></script>
 	</head>
 	<body>
 		<script>
@@ -20,7 +20,6 @@
 			$('#normal').click(function(){
 			$('#alpha').css('font-size', '-=10');
 			$('#alpha').css('font-family', 'Times New Roman');
-			$('#normal').attr("disabled",true);
 			$('#hemma').removeAttr("disabled");
 			});
 			});
@@ -36,7 +35,7 @@
 			<ul>
 				<li><a href="index.php">Startsiden</a></li>
 				<li><a href="index.php?p=modeller">Modeller</a></li>
-				<li><a href="index.php?p=sporsmol">Spørsmål</a></li>
+				<li><a href="index.php?p=sporsmol">Spï¿½rsmï¿½l</a></li>
 				<li><a href="index.php?p=design">Design</a></li>
 			</ul>
 		</nav>
