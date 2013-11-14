@@ -1,5 +1,0 @@
-#facebook:hover{
-	background-color: #405D9A;
-	border-radius: 7px;
-
-}
