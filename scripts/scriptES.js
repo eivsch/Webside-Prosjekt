@@ -11,8 +11,10 @@ function toggleTekst(idTekst, idKnapp){
   if ( a == b)
   {
     $(idKnapp).attr("aria-expanded", "true");
+    $(idKnapp).html('Les mindre');
   }else{
     $(idKnapp).attr("aria-expanded", "false");
+    $(idKnapp).html('Les mer');
   }
   $(idTekst).toggle(115);
 }
