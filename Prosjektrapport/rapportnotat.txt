@@ -1,0 +1,24 @@
+Milepæl
+
+Basic gikk greit, mens sånne ting som implementering og ekstrating tok tid.
+Easteregg tar mer tid enn vi trodde.
+
+Milepælsmålene ble stort sett overholdt, mens JQuery har tatt tid siden vi oppdaget at noe mer trengtes og andre greier trengtes ikke.
+WAI-ARIA tok mye lenger tid enn jeg trodde og derfor fikk jeg ikke til så mye med det. Både JQuery og PHP har gått veldig greit, mens det
+er CSS-en som har blitt mest krøll med.
+
+Litt lavt fokus på et visuelle, men ble bestemt fordi vi hadde mer fokus på implementering og innhold. Satte mer fokus på dette mot slutten.
+
+Vi hadde den avtalen å jobbe individuelt. Ved at det viste seg å være lettere å dele over GitHub enn først antatt, gjorde at vi sto veldig fritt hver 
+for oss. I etterpåklokskapens navn var kansje ikke dette helt ideelt, da vi mot slutten samlet alt litt tidligere enn først planlagt,
+og oppdaget hvor mye rot som måtte ryddes opp i.
+
+Det som er implementert fra mitt hold er JQuery og PHP til rammen. JQuery er implementert til universell-button og vanlig-button.
+Ved oppstart er vanlig-button deaktivert og universell aktiv. Ved å trykke på universell blir teksten 10px større og sans-serif,
+før den blir deaktivert. Samtidig blir vanlig-button aktivert. Ved å trykke på vanlig button vil teksten få den opprinnelige
+formen.
+
+PHP-en fungerer slik at alle sidene ligger i en folder som heter 'pages'. Ved å kalle hver av undersidene med index.php?p= der
+p får forskjellig verdi for hver av undersidene, gjør det at når man kaller den verdien som står på en av undersidene, så inkluderer
+rammeverket den teksten så lenge den slutter med .inc.php. Hvis det ikke finnes en side som har lik verdi, får man feilmelding. 
+I tilfellet ingen av delene, får man hjemmesiden. som ligger automatisk knyttet til index.php.
