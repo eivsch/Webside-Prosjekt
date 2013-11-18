@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" type="text/css" href="styles/stylesheet2.css">
-        <link href="./stylesheet1.css" title="styles/stylesheet1" rel="alternate stylesheet">
+        
+        <link rel="stylesheet" type="text/css" href="styles/stylesheet1.css">
+   
        
         <title>test</title>
     </head>
@@ -11,6 +11,7 @@
         <?php
 
         ?>
+ 
         <div id="test">
             <section id="design1">
                 <h1 id="h1">3DM-filer #1</h1>
@@ -84,5 +85,6 @@
                 </div>
             </section>
         </div>
+       
     </body>
 </html>

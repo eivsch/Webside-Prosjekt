@@ -1,0 +1,178 @@
+@font-face {
+
+    font-family: bonvenocflight;
+    src: url('bilder/BonvenoCF-Light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+
+font-family: bonvenocflight, helvetica, arial;
+color: #fff;
+max-width: 500px;
+display: inline-block;
+margin-top: 70px;
+margin-left: 20px;
+letter-spacing:2px;
+
+}
+
+h2{
+    font-family: bonvenocflight, helvetica, arial;
+    letter-spacing:2px;
+    border-bottom: 2px solid orange;
+}
+
+h3{
+    font-family: bonvenocflight, helvetica, arial;
+    letter-spacing:2px;
+}
+
+#header{
+
+top: 0;
+position: fixed;
+z-index:1;
+width:100%;
+
+
+}
+
+header {
+	
+background-color: orange;
+height: 100px;
+margin-top: -8px;
+margin-left: -8px;
+	
+}
+
+.top{
+margin-top: 152px;    
+}
+
+section {
+
+
+margin-left: auto;
+margin-right: auto;
+max-width: 1000px;
+min-width: 540px;
+}
+
+#hemma{
+   float: right;
+   margin-top: 75px;
+   margin-right: 60px;
+  
+    
+}
+
+#normal{
+   float: right;
+   margin-right: 0px;
+   margin-top: 75px;
+  
+}
+
+.buttonStyle{
+  background: -webkit-linear-gradient(lightblue, #4E9CAF); 
+  background: -o-linear-gradient(lightblue, #4E9CAF); 
+  background: -moz-linear-gradient(lightblue, #4E9CAF);
+  background: linear-gradient(lightblue, #4E9CAF); 
+ 
+  color: white;
+  
+}
+
+.buttonStyle:hover{
+    background: -webkit-linear-gradient(#4E9CAF, lightblue); 
+    background: -o-linear-gradient(#4E9CAF, lightblue); 
+    background: -moz-linear-gradient(#4E9CAF, lightblue);
+    background: linear-gradient(#4E9CAF, lightblue); 
+}
+
+.velkommen{
+    font-family: bonvenocflight, helvetica, arial;
+    font-size: 1.3em;
+    letter-spacing: 2px;
+    color: gray;
+    padding: 20px;
+    border-bottom: 2px solid lightblue;
+    
+}
+
+.undersiderOverskrift{
+    font-family: bonvenocflight, helvetica, arial;
+    margin-left: 400px;
+    color: black;
+    position: absolute;
+    background-color: lightblue;
+    width: 500px;
+}
+
+.ikoner{
+    margin-left: 150px;
+    
+}
+.black{
+    color: black;
+}
+
+
+.footerContent{
+font-family: bonvenocflight, helvetica, arial;    
+color: lightblue;
+word-wrap: break-word;
+width: 250px;
+margin-top: 30px;
+margin-left: 150px;
+display: inline-block;
+ 
+}
+
+.overskrift{
+    color: white;
+}
+
+#facebook:hover{
+	background-color: #405D9A;
+	border-radius: 7px;
+
+}
+
+ul{
+    list-style: none;
+	
+}
+
+.navigasjon{
+    color: lightblue;
+    text-decoration: none;
+}
+
+#copyright{
+    clear:both;
+    border-top: 2px dotted white;
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    padding-top: 20px;
+    text-align: center;
+    font-family: bonvenocflight, helvetica, arial;
+    color: lightblue;
+    font-size: 0.9em;
+  
+}
+
+footer {
+	clear:both;
+	background-color: #333333;
+	height: 270px;
+        margin-left: -8px;
+        margin-right: -8px;
+        margin-bottom: -8px;
+        
+}
