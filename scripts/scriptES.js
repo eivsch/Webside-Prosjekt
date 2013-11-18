@@ -4,7 +4,7 @@
 
 
 //toggle-knapp for skjulte div-elementer
-var a = 5;
+var a = 0;
 var b = "false";
 function toggleTekst(idTekst, idKnapp){
   a = $(idKnapp).attr("aria-expanded");
