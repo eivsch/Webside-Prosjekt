@@ -4,7 +4,28 @@ __UNDERSIDE - MODELLER__
 Siden er laget som en underside til hovedsiden 3dprint.no. Den inneholder litt generell informasjon 
 om 3D-printere, samt informasjon om et lite utvalg på 6 forskjellige printere. Det finnes 
 svært mange forskjellige modeller, men jeg ønsket å holde siden så enkel så mulig. Modellene
-som ble med på siden ble derfor prioritert utifra 
+som ble med på siden ble derfor prioritert utifra noen spesifikke kriterier:
+  
+  - At de skulle være relativt forskjellig fra hverandre slik at brukeren kan få et bredt bilde
+    av de forskjellige modelltypene som finnes
+  - Samtidig var det et poeng at de ikke skulle være for dyre, da selve siden er en generell 
+    informasjonsside for folk flest, og forhåpentligvis en bidragsyter til økt interesse rundt 
+    3D-printing. Helst skal modellene derfor være noe folk kan ha råd til å kjøpe, slik at de
+    lettere blir interessert.
+  - Selve antallet på 6 passet også best med sidens design.
+  
+Siden er strukturert på følgende måte:
+  - Øverst og nederst på siden er en header og en footer med logo, linker og litt generell info om
+    siden, dette er felles for alle undersider. De punktene som kommer under utgjør hovedinnholdet
+    på denne undersiden.
+  - Først kommer en overskrift og et ikon som forteller brukeren hvor han/hun er kommet.
+  - Deretter følger to korte tekstbolker stilt ved siden av hverandre med hver sin overskrift som 
+    gir brukeren litt grunnleggende info om 3D-printere, hvordan de fungerer, teknologier og materialer. 
+    Dette først og fremst for at de skal forstå bedre informasjonen som kommer nedenfor om selve modellene.
+  - Denne oversikten består av 6 forskjellige 3Dprintere, 3 på hver linje med hvert sitt tilhørende bilde
+    og tekst. Under hver tekst ligger en "Les mer" knapp. Når brukeren trykker på denne vises det mer 
+    informasjon om den tilhørende modellen. Dette er for holde sidens design så enkel som mulig. Dersom
+    brukeren trykker på knappen på nytt, vil teksten skjules igjen.
 
 ________________________
 ____IMPLEMENTASJONER____
@@ -34,7 +55,7 @@ ________VERKTØY________
 
 I løpet av prosjektet har jeg brukt følgende verktøy:
 - NotePad ++
-- TextPad  (All Html, CSS og javascript er skrevet i disse to verktøyene )
+- TextPad  (All Html, CSS og javascript er skrevet i disse to nevnte verktøyene )
 - Nettleserne Firefox og Chrome (For testing av sidene)
 - Github (Versjonshåndtering)
 
