@@ -1,0 +1,13 @@
+Undersiden "Modeller" er gjort opp av et html 5 dokument, i tillegg er det implementert følgende:
+
+- Et CSS 3 stilark i tillegg til det som er "felles" der undersidens unike layout er definert.
+
+- Et javascript som inneholder en funksjon for 6 "les mer" knapper. Når man trykker på knappene
+  vises det skjult tekst tilhørende den knappen det ble trykket på, i tillegg til at teksten på
+  knappen forandres til "les mindre". Trykker man på knappen en gang til vil altså teksten bli
+  skjult igjen. Det er også lagt til WAI-ARIA funksjonalitet, slik at skjermleseren får beskjed 
+  om at knappen skjuler/viser en tekst. Dette gjøres ved at knappen har et attributt "aria-expanded = ",
+  som veksler mellom verdiene "true" eller "false", avhengig av om den skjulte teksten vises eller 
+  ikke.
+
+- ?Easter egg? 
