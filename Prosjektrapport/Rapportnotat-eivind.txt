@@ -26,18 +26,56 @@ Siden er strukturert på følgende måte:
     og tekst. Under hver tekst ligger en "Les mer" knapp. Når brukeren trykker på denne vises det mer 
     informasjon om den tilhørende modellen. Dette er for holde sidens design så enkel som mulig. Dersom
     brukeren trykker på knappen på nytt, vil teksten skjules igjen.
+    
 
 ________________________
 ____IMPLEMENTASJONER____
 
-Undersiden "Modeller" er i hovedsak gjort opp av et Html 5 dokument, et CSS 3 stilark og et 
-Javascript. I tillegg kommer naturligvis det som er felles for alle sidene.
+Undersiden "Modeller" er i hovedsak gjort opp av et HTML5 dokument, et CSS3 stilark, et 
+Javascript, samt noe WAI-ARIA. I tillegg kommer naturligvis det som er felles for alle sidene.
 
-Html
- - 
+HTML5
 
-CSS
- -
+ - HTML-dokumentet er lagret som en php-fil, slik at det som er felles for alle undersidene skal
+   kunne inkluderes. Denne beskrivelsen gjelder derfor kun det som er unikt for min side i filen 
+   modeller.inc.php.
+ - I selve HTMLen er det forsøkt å bruke så mange semantiske tagger som mulig, for å gjøre koden
+   mest mulig oversiktlig og klar. Jeg har i tillegg brukt attributter som "id" og "class" på de aller
+   fleste tagger for lettere å kunne referere til dem i f.eks CSS og JS.
+ - Jeg valgte å strukturere det slik at alt innhold på siden, unntatt overskriften og ikonet, ligger
+   i en egen <section> med id="models".
+ - Deretter kommer det to infotekster, som ligger i hver sin <div> med class="infoTekst", slik at de 
+   stilet likt. Disse har en liten tilhørende overskrift, og jeg valgte derfor <h3> taggen for disse. 
+   Selve teksten ligger i en <p> tag.
+ - Deretter  modelloversikten, med tilhørende overskrift i en <h2>. 
+   Oversikten er strukturert slik at presentasjonen av hver enkelt printermodell ligger i et slags vindu,
+   utgjort av en <div> med class="outer". Dette fordi at alle de totalt 6 vinduene skal ha mye felles CSS. 
+   I tillegg har hver enkelt en unik id "first", "second" osv. fordi enkelte CSS-egenskaper er unike for hvert
+   vindu. I tillegg til dette er det nøstet inn flere <div>er og andre tagger som utgjør vinduets innhold.
+   
+[  
+    Nøstingen ser omtrent slik ut: 
+    <div class="outer" id="[nr]">       ---> ytre div - inneholder alt, selve vinduet
+    <div id="inner[nr]">                ---> indre div - inneholder overskrift og bilde av modell
+    </div>                              ---> slutt på indre div
+    <div> <div class="skjult" id="[modell]Text" hidden> </div> </div>    ---> Her ligger informasjonsteksten om hver
+    <button>                            ---> "les mer" knapp                  modell.
+    </div>                              ---> slutt på ytre div
+                                                                                                                      ]
+
+ - Angående informasjonsteksten om hver enkelt modell så ligger den i en <div> tag, og ikke i den mer
+   semantiske <p> taggen. Dette er fordi den innprogrammerte "vis/skjul"-funksjonaliteten krever tekst 
+   i to nøstede tagger, og nøstede <p> tagger vil ikke validere.
+ - Det er også verdt å merke seg at mellom de to radene med modellvinduer ligger en "hjelpe" <div> med id
+   ="between". Dette er fordi når brukeren utvider et av de øverste vinduene med mer tekst, så vil
+   alle de tre nederste vinduene bevege seg "på linje" nedover.
+ - Nederst i dokumentet ligger en ny "hjelpe"<div> med id="stop". Dette var for å stoppe flyten i dokumentet,
+   jeg fikk det ikke til å fungere uten.
+
+
+CSS3
+ - Sidens CSS er utgjort av flere stilark som er felles for alle undersider. Denne beskrivelsen gjelder
+   kun denne sidens unike stilark i filen minstil1.css.
 
 Javascript/jQuery
  - Et javascript som inneholder en funksjon for 6 "les mer" knapper. Når man trykker på knappene
@@ -55,7 +93,7 @@ ________VERKTØY________
 
 I løpet av prosjektet har jeg brukt følgende verktøy:
 - NotePad ++
-- TextPad  (All Html, CSS og javascript er skrevet i disse to nevnte verktøyene )
+- TextPad  (All HTML, CSS og javascript er skrevet i disse to nevnte verktøyene )
 - Nettleserne Firefox og Chrome (For testing av sidene)
 - Github (Versjonshåndtering)
 
@@ -96,4 +134,13 @@ ___ARBEIDSPROSESS / TIDSLINJE___
 -  Fikk gjort ferdig Easter Egg med Thomas og begynte også på rapportskriving. Angående rapportskriving
    innså jeg at jeg kunne ha vært flinkere til å dokumentere arbeidet gjennom prosjektet, men det ble 
    ikke noe stort problem.
+
+
+
+
+______________________________________
+___OPPSUMMERING / HVA HAR JEG LÆRT?___
+
+-Angående bilder og kildehenvisning:
+
 
