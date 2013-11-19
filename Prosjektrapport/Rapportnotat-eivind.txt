@@ -1,13 +1,28 @@
-Undersiden "Modeller" er gjort opp av et html 5 dokument, i tillegg er det implementert følgende:
+IMPLEMENTASJONER
+
+Undersiden "Modeller" er gjort opp av et html 5 dokument, i tillegg er det implementert fï¿½lgende:
 
 - Et CSS 3 stilark i tillegg til det som er "felles" der undersidens unike layout er definert.
 
-- Et javascript som inneholder en funksjon for 6 "les mer" knapper. Når man trykker på knappene
-  vises det skjult tekst tilhørende den knappen det ble trykket på, i tillegg til at teksten på
-  knappen forandres til "les mindre". Trykker man på knappen en gang til vil altså teksten bli
-  skjult igjen. Det er også lagt til WAI-ARIA funksjonalitet, slik at skjermleseren får beskjed 
-  om at knappen skjuler/viser en tekst. Dette gjøres ved at knappen har et attributt "aria-expanded = ",
+- Et javascript som inneholder en funksjon for 6 "les mer" knapper. Nï¿½r man trykker pï¿½ knappene
+  vises det skjult tekst tilhï¿½rende den knappen det ble trykket pï¿½, i tillegg til at teksten pï¿½
+  knappen forandres til "les mindre". Trykker man pï¿½ knappen en gang til vil altsï¿½ teksten bli
+  skjult igjen. Det er ogsï¿½ lagt til WAI-ARIA funksjonalitet, slik at skjermleseren fï¿½r beskjed 
+  om at knappen skjuler/viser en tekst. Dette gjï¿½res ved at knappen har et attributt "aria-expanded = ",
   som veksler mellom verdiene "true" eller "false", avhengig av om den skjulte teksten vises eller 
   ikke.
 
 - ?Easter egg? 
+
+
+TIDSLINJE
+
+1. Fase (22 - 30/10) 
+-  Etter Ã¥ ha diskutert i gruppa ble vi enige om sidens innhold og hva jeg spesifikt skulle lage, altsÃ¥ 
+   en helt egen underside til hovedsiden om modeller av 3D-printere. Dette skulle lages mer eller mindre
+   fra bunnen av. I starten hadde vi naturligvis ikke klart for oss nÃ¸yaktig hvordan siden skulle se ut
+   og fungere. Dermed ble det tidlig en utfordring Ã¥ begynne pÃ¥ min egen underside, da jeg ikke visste
+   hvordan denne skulle passe inn i helheten. Det ble derfor et viktig poeng Ã¥ ikke gjÃ¸re for mye pÃ¥ selve
+   siden i begynnelsen, for Ã¥ unngÃ¥ og lage/implementere ting som senere mÃ¥tte fjernes. Jeg begynte derfor 
+   med Ã¥ lage en helt grunnleggende html-struktur og CSS for siden, basert pÃ¥ prosjektskissene og hva vi
+   hadde diskutert i gruppa.
