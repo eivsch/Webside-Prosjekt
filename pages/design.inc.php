@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
-        
-        <link rel="stylesheet" type="text/css" href="styles/stylesheet1.css">
-   
-       
-        <title>test</title>
+        <link rel="stylesheet" type="text/css" href="styles/stylesheet2.css">
+        <title>3DM-filer</title>
     </head>
-    <body>
-        <?php
-
-        ?>
- 
+    <body id="alpha">
+        <section class="top">
         <div id="test">
+            </div>
             <section id="design1">
-                <h1 id="h1">3DM-filer #1</h1>
-                <p id="tekst1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget pulvinar mi, et tristique sapien.
-                               Phasellus aliquet ligula vitae orci fermentum ornare. Proin ut urna id leo aliquam tempor.</p>
+                <h1 id="h1">Nokia-deksel</h1>
+                <p id="tekst1">
+                    Deksel til Nokia XTC8
+                    Dimensjoner: 20x8cm
+                    Størrelse: 500k
+                </p>
                 <div id="bilde1">
                     <img src="bilder/design.jpg" alt="Nokia deksel-design" width="110" height="170">
                 </div>
@@ -84,7 +82,9 @@
                 <a href="3designs/human.3DM"><p id="tekstF">Last ned</p></a>
                 </div>
             </section>
-        </div>
-       
+            <div id="test2">
+                <p>test</p>
+            </div>
+     </section>
     </body>
 </html>
