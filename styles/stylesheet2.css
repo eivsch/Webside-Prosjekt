@@ -1,33 +1,40 @@
 
 #test {
-    background:rgb(242, 242, 247);
+    background:white;
     position: absolute;
-    top:100px;
-    left:50px;
+    top:300px;
+    left:73px;
     right:50px;
     max-height: 660px;
     min-height: 660px;  
     margin-top: 50px;
     max-width: 1200px;
     min-width: 1200px;
+    border-right: 2px solid rgb(204, 204, 204);
+    border-left: 2px solid rgb(204, 204, 204);
+    
+    
     
     
     
 }
 #design1 {
-    border: 2px solid orange;
-    background-color: rgb(153, 153, 153);
+    border: 2px solid black;
+    background-color: whitesmoke;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
     position: absolute;
-    top: 166px;
-    left: 67px;
+    top: 366px;
+    left: 90px;
     margin-right: 700px;
     width: 350px;
     max-width:350px;
     min-width: 350px;
-    height: 290px;
+    min-height: 290px;
+    max-height: 700px;
+    border-radius: 10px;
+    border-style:dotted;
 }
 #h1 {
     color: rgb(95, 137, 172);
@@ -37,7 +44,7 @@
 }
 #bilde1 {
     position: absolute;
-    top:25px;
+    top:50px;
     left:250px;
 }
 #tekst1 {
@@ -47,43 +54,38 @@
     top:35px;
 }
 #lastned1 {
-  display: block;
-  width:75px;
-  height: 25px;
-  background: #4E9CAF;
-  padding: 5px 10px 10px 5px;
-  text-align: center;
-  border-radius: 5px;
-  color: white;
-  font-weight: bold;
   position: absolute;
   top:210px;
   left:11px;
+  width:80px;
+  height: 40px;
 }
-#tekstA {
+/*#tekstA {
     position: absolute;
     top:-12px;
     left:3px;
     color:white;
     font-size: 20px;
-}
+}*/
 
 
 
 #design2 {
-    border: 2px solid rgb(181, 189, 104);
-    background-color: rgb(40, 42, 46);
+    border: 2px solid black;
+    background-color: whitesmoke;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
     position: absolute;
-    top: 166px;
-    left: 463px;
+    top: 366px;
+    left: 486px;
     margin-right: 700px;
     width: 350px;
     height: 290px;
     max-width:350px;
     min-width: 350px;
+    border-radius: 10px;
+    border-style:dotted;
 }
 #h2 {
     color: rgb(95, 137, 172);
@@ -93,7 +95,7 @@
 }
 #bilde2 {
     position: absolute;
-    top:25px;
+    top:50px;
     left:250px;
 }
 #tekst2 {
@@ -103,43 +105,38 @@
     top:35px;
 }
 #lastned2 {
-  display: block;
-  width:75px;
-  height: 25px;
-  background: #4E9CAF;
-  padding: 5px 10px 10px 5px;
-  text-align: center;
-  border-radius: 5px;
-  color: white;
-  font-weight: bold;
   position: absolute;
   top:210px;
   left:11px;
+  width:80px;
+  height: 40px;
 }
-#tekstB {
+/*#tekstB {
     position: absolute;
     top:-12px;
     left:3px;
     color:white;
-}
+}*/
 
 
 
 
 #design3 {
-    border: 2px solid rgb(181, 189, 104);
-    background-color: rgb(40, 42, 46);
+    border: 2px solid black;
+    background-color: whitesmoke;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
     position: absolute;
-    top: 166px;
-    left: 859px;
+    top: 366px;
+    left: 882px;
     margin-right: 700px;
     width: 350px;
     height: 290px;
     max-width:350px;
     min-width: 350px;
+    border-radius: 10px;
+    border-style:dotted;
 }
 #h3 {
     color: rgb(95, 137, 172);
@@ -149,7 +146,7 @@
 }
 #bilde3 {
     position: absolute;
-    top:25px;
+    top:50px;
     left:250px;
 }
 #tekst3 {
@@ -159,40 +156,35 @@
     top:35px;
 }
 #lastned3 {
-  display: block;
-  width:75px;
-  height: 25px;
-  background: #4E9CAF;
-  padding: 5px 10px 10px 5px;
-  text-align: center;
-  border-radius: 5px;
-  color: white;
-  font-weight: bold;
   position: absolute;
   top:210px;
   left:11px;
+  width:80px;
+  height: 40px;
 }
-#tekstC {
+/*#tekstC {
     position: absolute;
     top:-12px;
     left:3px;
     color:white;
-}
+}*/
 
 
 #design4 {
-    border: 2px solid rgb(181, 189, 104);
-    background-color: rgb(40, 42, 46);
+    border: 2px solid black;
+    background-color: whitesmoke;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
     position: absolute;
-    top: 491px;
-    left: 67px;
+    top: 691px;
+    left: 90px;
     max-width:350px;
     min-width: 350px;
     width: 350px;
     height: 290px;
+    border-radius: 10px;
+    border-style:dotted;
 }
 #h4 {
     color: rgb(95, 137, 172);
@@ -202,7 +194,7 @@
 }
 #bilde4 {
     position: absolute;
-    top:25px;
+    top:50px;
     left:250px;
 }
 #tekst4 {
@@ -212,41 +204,36 @@
     top:35px;
 }
 #lastned4 {
-  display: block;
-  width:75px;
-  height: 25px;
-  background: #4E9CAF;
-  padding: 5px 10px 10px 5px;
-  text-align: center;
-  border-radius: 5px;
-  color: white;
-  font-weight: bold;
   position: absolute;
   top:210px;
   left:11px;
+  width:80px;
+  height: 40px;
   
 }
-#tekstD {
+/*#tekstD {
     position: absolute;
     top:-12px;
     left:3px;
     color:white;
-}
+}*/
 
 
 #design5 {
-    border: 2px solid rgb(181, 189, 104);
-    background-color: rgb(40, 42, 46);
+    border: 2px solid black;
+    background-color: whitesmoke;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
     position: absolute;
-    top: 491px;
-    left: 463px;
+    top: 691px;
+    left: 486px;
     width: 350px;
     height: 290px;
     max-width:350px;
     min-width: 350px;
+    border-radius: 10px;
+    border-style:dotted;
 }
 #h5 {
     color: rgb(95, 137, 172);
@@ -256,7 +243,7 @@
 }
 #bilde5 {
     position: absolute;
-    top:25px;
+    top:50px;
     left:250px;
 }
 #tekst5 {
@@ -266,40 +253,35 @@
     top:35px;
 }
 #lastned5 {
-  display: block;
-  width:75px;
-  height: 25px;
-  background: #4E9CAF;
-  padding: 5px 10px 10px 5px;
-  text-align: center;
-  border-radius: 5px;
-  color: white;
-  font-weight: bold;
   position: absolute;
   top:210px;
   left:11px;
+  width:80px;
+  height: 40px;
 }
-#tekstE {
+/*#tekstE {
     position: absolute;
     top:-12px;
     left:3px;
     color:white;
-}
+}*/
 
 
 #design6 {
-    border: 2px solid rgb(181, 189, 104);
-    background-color: rgb(40, 42, 46);
+    border: 2px solid black;
+    background-color: whitesmoke;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
     position: absolute;
-    top: 491px;
-    left: 859px;
+    top: 691px;
+    left: 882px;
     width: 350px;
     height: 290px;
     max-width:350px;
     min-width: 350px;
+    border-radius: 10px;
+    border-style:dotted;
 }
 #h6 {
     color: rgb(95, 137, 172);
@@ -309,7 +291,7 @@
 }
 #bilde6 {
     position: absolute;
-    top:25px;
+    top:50px;
     left:250px;
 }
 #tekst6 {
@@ -319,34 +301,38 @@
     top:35px;
 }
 #lastned6 {
-  display: block;
-  width:75px;
-  height: 25px;
-  background: #4E9CAF;
-  padding: 5px 10px 10px 5px;
-  text-align: center;
-  border-radius: 5px;
-  color: white;
-  font-weight: bold;
   position: absolute;
   top:210px;
   left:11px;
+  width:80px;
+  height: 40px;
 }
-#tekstF {
+/*#tekstF {
     position: relative;
     top:-12px;
     left:3px;
     color:white;
-}
+}*/
 #test2{
   background:transparent;
     position: relative;
-    top:200px;
+    top:400px;
     left:50px;
     right:50px;
     height:550px;
     max-width: 1200px;
-    margin-bottom: 200px;
+    margin-bottom: 400px;
     z-index: -1;
 }
+#overskrift{
+    position: absolute;
+    top:151px;
+    left:174px;
+    
+}
+#ikontest{
+    position: absolute;
+    top:170px;
+}
+
 
