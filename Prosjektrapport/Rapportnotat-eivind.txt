@@ -1,21 +1,45 @@
-IMPLEMENTASJONER
+________________________
+__UNDERSIDE - MODELLER__
 
-Undersiden "Modeller" er gjort opp av et html 5 dokument, i tillegg er det implementert f�lgende:
+Siden er laget som en underside til hovedsiden 3dprint.no. Den inneholder litt generell informasjon 
+om 3D-printere, samt informasjon om et lite utvalg på 6 forskjellige printere. Det finnes 
+svært mange forskjellige modeller, men jeg ønsket å holde siden så enkel så mulig. Modellene
+som ble med på siden ble derfor prioritert utifra 
 
-- Et CSS 3 stilark i tillegg til det som er "felles" der undersidens unike layout er definert.
+________________________
+____IMPLEMENTASJONER____
 
-- Et javascript som inneholder en funksjon for 6 "les mer" knapper. N�r man trykker p� knappene
-  vises det skjult tekst tilh�rende den knappen det ble trykket p�, i tillegg til at teksten p�
-  knappen forandres til "les mindre". Trykker man p� knappen en gang til vil alts� teksten bli
-  skjult igjen. Det er ogs� lagt til WAI-ARIA funksjonalitet, slik at skjermleseren f�r beskjed 
-  om at knappen skjuler/viser en tekst. Dette gj�res ved at knappen har et attributt "aria-expanded = ",
-  som veksler mellom verdiene "true" eller "false", avhengig av om den skjulte teksten vises eller 
-  ikke.
+Undersiden "Modeller" er i hovedsak gjort opp av et Html 5 dokument, et CSS 3 stilark og et 
+Javascript. I tillegg kommer naturligvis det som er felles for alle sidene.
 
-- ?Easter egg? 
+Html
+ - 
 
+CSS
+ -
 
-TIDSLINJE
+Javascript/jQuery
+ - Et javascript som inneholder en funksjon for 6 "les mer" knapper. Når man trykker på knappene
+   vises det skjult tekst tilhørende den knappen det ble trykket på, i tillegg til at teksten på
+   knappen forandres til "les mindre". Trykker man på knappen en gang til vil altså teksten bli
+   skjult igjen. Det er også lagt til WAI-ARIA funksjonalitet, slik at skjermleseren før beskjed 
+   om at knappen skjuler/viser en tekst. Dette gjøres ved at knappen har et attributt "aria-expanded = ",
+   som veksler mellom verdiene "true" eller "false", avhengig av om den skjulte teksten vises eller 
+   ikke.  
+
+ - ?Easter egg? 
+
+_______________________
+________VERKTØY________
+
+I løpet av prosjektet har jeg brukt følgende verktøy:
+- NotePad ++
+- TextPad  (All Html, CSS og javascript er skrevet i disse to verktøyene )
+- Nettleserne Firefox og Chrome (For testing av sidene)
+- Github (Versjonshåndtering)
+
+________________________________
+___ARBEIDSPROSESS / TIDSLINJE___
 
 1. Fase (22 - 30/10) 
 -  Etter å ha diskutert i gruppa ble vi enige om sidens innhold og hva jeg spesifikt skulle lage, altså 
@@ -25,4 +49,30 @@ TIDSLINJE
    hvordan denne skulle passe inn i helheten. Det ble derfor et viktig poeng å ikke gjøre for mye på selve
    siden i begynnelsen, for å unngå og lage/implementere ting som senere måtte fjernes. Jeg begynte derfor 
    med å lage en helt grunnleggende html-struktur og CSS for siden, basert på prosjektskissene og hva vi
-   hadde diskutert i gruppa.
+   hadde diskutert i gruppa. I tillegg til dette begynte jeg med ren faktainnsamling til selve innholdet
+   på siden, ved å lese meg opp på ulike 3D-printere, samt å finne bilder jeg ønsket å bruke. Jeg bestemte
+   meg likevel ganske tidlig for hvordan siden skulle se ut.
+
+-  Vi ble også enige om i gruppa at jeg og Thomas skulle lage et easter egg, men vi fikk ikke begynt på dette.
+
+2. Fase (31/10 - 6/11)
+-  Etterhvert som prosjektet skred fram fikk vi blant annet utformet et felles CSS-stilark som skulle gjelde
+   for hele siden, noe som naturligvis gjorde arbeidet med min egen underside lettere. Jeg fikk jobbet jevnt, 
+   og ble etterhvert så og si ferdig med den grunnleggende utformingen. Dette innebar først og fremst ferdig
+   Html og CSS, samt at jeg fikk lagt inn bilder og tekst til innholdet. Jeg begynte også på et Javascript
+   til siden, først og fremst for å programmere noen Les mer/Les mindre-knapper, og enkel WAI-ARIA-funksjonalitet.
+   Foreløpig lå jeg godt i rute i forhold til milepælsplanen.
+
+3. Fase (7/11 - 24/11)
+-  En god del av tiden ble brukt på finjustering av siden, innhenting av mer fakta, og på å gjøre ferdig 
+   javascriptet. I denne fasen fikk vi dessuten for første gang samlet alle sidene under et felles rammeverk
+   og fikk se hvordan det hele fungerte sammen. Dette medførte naturligvis endel ekstra jobb siden alle 
+   hadde lagt egne sider fra bunnen av. Jeg brukte derfor endel tid på å kalibrere siden min slik at den
+   skulle passe inn i PHP-rammeverket. Rent bortsett fra det følte jeg at jeg var kommet greit i mål med
+   arbeidet, og begynte derfor å se på endel WAI-ARIA-funksjonalitet som var et uttalt mål for oss i 
+   forprosjektrapporten, og fikk lagt inn endel. 
+
+-  Fikk gjort ferdig Easter Egg med Thomas og begynte også på rapportskriving. Angående rapportskriving
+   innså jeg at jeg kunne ha vært flinkere til å dokumentere arbeidet gjennom prosjektet, men det ble 
+   ikke noe stort problem.
+
