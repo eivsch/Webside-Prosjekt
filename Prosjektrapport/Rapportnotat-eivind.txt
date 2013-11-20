@@ -27,6 +27,13 @@ Siden er strukturert på følgende måte:
     informasjon om den tilhørende modellen. Dette er for holde sidens design så enkel som mulig. Dersom
     brukeren trykker på knappen på nytt, vil teksten skjules igjen.
     
+Angående bildebruk:
+ - Har valgt å bruke bilder jeg har funnet rundt omkring på nettet, selv om jeg er usikker på opphavsrett/lisens
+   (kan ikke se noe oppgitt på bildene). Har derfor lagt ved en synlig "byline" under bildene med link 
+   til der jeg fant dem. Dette fordi det var svært vanskelig å finne bilder av modellene med Creative 
+   Commons-lisenser ol. Alternativet hadde vært ingen bilder i det hele tatt av modellene og føler det ville 
+   gått ganske hardt utover designet på siden.
+   
 
 ________________________
 ____IMPLEMENTASJONER____
@@ -38,7 +45,7 @@ HTML5
 
  - HTML-dokumentet er lagret som en php-fil, slik at det som er felles for alle undersidene skal
    kunne inkluderes. Denne beskrivelsen gjelder derfor kun det som er unikt for min side i filen 
-   modeller.inc.php.
+   _modeller.inc.php_.
  - I selve HTMLen er det forsøkt å bruke så mange semantiske tagger som mulig, for å gjøre koden
    mest mulig oversiktlig og klar. Jeg har i tillegg brukt attributter som "id" og "class" på de aller
    fleste tagger for lettere å kunne referere til dem i f.eks CSS og JS.
@@ -70,14 +77,37 @@ HTML5
    ="between". Dette er fordi når brukeren utvider et av de øverste vinduene med mer tekst, så vil
    alle de tre nederste vinduene bevege seg "på linje" nedover.
  - Nederst i dokumentet ligger en ny "hjelpe"<div> med id="stop". Dette var for å stoppe flyten i dokumentet,
-   jeg fikk det ikke til å fungere uten.
+   jeg fikk det ikke til å fungere sikkkelig uten.
+   
 
 
 CSS3
- - Sidens CSS er utgjort av flere stilark som er felles for alle undersider. Denne beskrivelsen gjelder
-   kun denne sidens unike stilark i filen minstil1.css.
 
-Javascript/jQuery
+ - Sidens CSS er utgjort av flere stilark som er felles for alle undersider. Denne beskrivelsen gjelder
+   kun denne sidens unike stilark i filen _minstil1.css_, en CSS3-fil.
+ - Hovedideen bak dette stilarket var i så stor grad det lot seg gjøre, kun å "styre" hvor de ulike elementene 
+   skulle plasseres på siden og hvor mye plass de skulle ta. Dette fordi egenskaper som skritstørelse på 
+   brødtekst/overskrifter, skriftfarge, bakgrunnsfarge, knappedesign osv. i hovedsak er definert i et felles 
+   CSS-stilark. Med andre ord, egenskaper som "float", "margin", "padding" og "width".
+ - Jeg vil si det viktigste innholdet i stilarket er nettopp "floaten". Det er dette som får de to infotekstene 
+   på toppen av siden til å stå ved siden av hverandre, og tilsvarende for modeloversikten. Uten denne ville
+   de ulike HTML-elementene kun stått i en kolonne nedover. 
+ - Et alternativ til "float" kunne vært  "position", dette er ikke brukt i stilarket. Grunnen til det er at jeg
+   ønsket et relativt enkelt og fleksibelt design på siden. Da er det lettere å få det til å passe inn i 
+   hovedsidestrukturen, samtidig som man enklere kan forandre på ting som ikke passer. I mitt tilfelle var 
+   "Float" var tilstrekkelig for den layouten jeg ønsket, og da så jeg på det som unødvendig å legge til noe mer.
+
+Litt om designvalg:
+   - Det er selve modellene som er det viktigste med siden, valgte derfor å plassere det som er av typisk
+     "brødtekst" i små bolker med hver sin overskrift, for å gjøre det oversiktlig istedenfor å drukne
+     leseren i tekst. Det er dermed også et poeng å ha egne bilder for modellene. Selv om dette gjør siden
+     tregere å laste, mener jeg at de designmessige fordelene oppveier dette, da det blir mye lettere å fange
+     leserens interesse. Av disse grunnene valgte jeg også å ha "Les mer"-knapper som skjuler/viser det meste 
+     av teksten om modellene, for å ha bildene i sentrum.
+ 
+ 
+JAVASCRIPT/JQUERY
+
  - Et javascript som inneholder en funksjon for 6 "les mer" knapper. Når man trykker på knappene
    vises det skjult tekst tilhørende den knappen det ble trykket på, i tillegg til at teksten på
    knappen forandres til "les mindre". Trykker man på knappen en gang til vil altså teksten bli
@@ -85,8 +115,19 @@ Javascript/jQuery
    om at knappen skjuler/viser en tekst. Dette gjøres ved at knappen har et attributt "aria-expanded = ",
    som veksler mellom verdiene "true" eller "false", avhengig av om den skjulte teksten vises eller 
    ikke.  
-
  - ?Easter egg? 
+ 
+ 
+UNIVERSELL UTFORMING / WAI-ARIA
+
+ - Brukt landemerket role="main" i <section> taggen som inneholder hovedinnholdet på siden for å markere
+   at nettopp dette er hovedinnholdet. Også lagt til en aria-label="info/modeller" bare som en kort forklaring
+   av hva som er på siden.
+ - Brukt attributtet "aria-expanded" i Les mer/les mindre knappene. Dette vil fortelle skjermleseren om at
+   det finnes noe som kan utvides/reduseres side brukeren ikke kan se dette, og skjermleseren gir beskjed om
+   status expanded/collapsed.
+ - Også brukt tabindex på knappene for brukere som kun bruker tastatur. Vært bevisst på alternative/informative
+   bildetekster, samt en relativt stilren layout.
 
 _______________________
 ________VERKTØY________
@@ -112,7 +153,7 @@ ___ARBEIDSPROSESS / TIDSLINJE___
    på siden, ved å lese meg opp på ulike 3D-printere, samt å finne bilder jeg ønsket å bruke. Jeg bestemte
    meg likevel ganske tidlig for hvordan siden skulle se ut.
 
--  Vi ble også enige om i gruppa at jeg og Thomas skulle lage et easter egg, men vi fikk ikke begynt på dette.
+-  Vi ble også enige om i gruppa at jeg og Thomas skulle lage et easter egg, men vi fikk ikke begynt i denne fasen.
 
 2. Fase (31/10 - 6/11)
 -  Etterhvert som prosjektet skred fram fikk vi blant annet utformet et felles CSS-stilark som skulle gjelde
@@ -141,6 +182,38 @@ ___ARBEIDSPROSESS / TIDSLINJE___
 ______________________________________
 ___OPPSUMMERING / HVA HAR JEG LÆRT?___
 
--Angående bilder og kildehenvisning:
 
 
+
+______________________________________
+________________KILDER________________
+
+Webprosjektrepositoriet på Github: https://github.com/hioa-cs/webprosjekt
+   - Tidl. forelesninger om JS og jQuery
+   - Notat om kopibeskyttelse
+
+3DPrint.no: http://www.3dprint.no/index.php?option=com_virtuemart&view=category&virtuemart_category_id=3
+   - Informasjon om forskjellige modeller
+
+Medialt.no: http://medialt.no/eksempelsamling/index.html
+   - Informasjon om universell utforming
+
+WAI-ARIA-Guiden: http://php.medialt.no/studentprosjekt1/index.php
+   - Et tidl. studentprosjekt. informasjon om WAI-ARIA.
+  
+Hardware.no: http://www.hardware.no/artikler/guide-slik-velger-du-riktig-3d-skriver/136356
+   - En artkkel om 3D-printere og detaljert informasjon om enkelte modeller, samt ulike printerteknologier.
+  
+Wikipedia.org: http://en.wikipedia.org/wiki/3D_printing
+   - Engelsk og norsk artikkel om 3D-printing.
+  
+RepRap.org: http://reprap.org/wiki/RepRap
+   - Informasjon om RepRap-prosjektet
+   
+W3Schools: http://www.w3schools.com/
+   - Guider for CSS, HTML, Javascript og jQuery.
+
+Stackoverflow: http://stackoverflow.com/
+   - Spørsmål/svarside om alt mulig innenfor programmering
+  
+(I tilleg har alle bilder på siden tilhørende linker der jeg fant dem)
