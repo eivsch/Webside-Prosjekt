@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="styles/stylesheet2.css">
-        <title>3D-filer</title>
-    </head>
-    <body id="alpha">
+
         <section class="top">
-            <img src="bilder/testikon2.png" class="ikoner" id="ikontest">
+            <img class="ikoner" id="ikontest" src="bilder/ikoner/designIkon.png" alt="Design ikon">
             <h1 class="undersiderOverskrift" id="overskrift">3D-filer</h1>
         <div id="test">
             </div>
@@ -117,5 +111,3 @@
                 <p></p>
             </div>
      </section>
-    </body>
-</html>

@@ -40,6 +40,7 @@ margin-right:30px;
 #sixth{float:left;}
 
 img{margin-left:50px;}
+#facebook{margin-left: 0px;}
 .outer{
   width:255px;
   background-color:#FFFFFF;
@@ -52,13 +53,20 @@ img{margin-left:50px;}
 .skjult{
   margin-top:0px;
 }
-#stop{clear:both;}
-#between{background-color:#F2F2F7;
+#stop{
+    clear:both;
+}
+#between{
+  background-color:#F2F2F7;
   width:1000px;
   clear:left;
 }
-#models button{margin-top:-1px;}
-#egg{margin-left:50px;}
+#models button{
+    margin-top:-1px;
+}
+#egg{
+    margin-left:50px;
+}
 .byline{
   font-size:0.7em;
   margin-top:1px;

@@ -1,16 +1,20 @@
-<body id="alpha">
+
+            <div id="forsideDiv">
+                <h1 id="velkommenh1">Velkommen</h1>
+                <h1 id="tilh1">til</h1>
+                <h1 id="printh1">3d-print!</h1>
+                <div id="forsideMargin">
+            <img  class="forside" src="bilder/forside.png" alt="Bildet av 3d-printer"><img class="forside" src="bilder/forside2.png" alt="Bildet av 3d-printer">
+            
+                </div>
+            </div>
 	<section class="top">
-		<p class="velkommen">Velkommen til <span class="black">3D-print.no</span>, den offisielle informasjonssiden for <span class="black">3D-printing.</span>
-                                                   Siden tilh�rer 3D-direktoratet,
-						   som ble opprettet for � kunne gjennomf�re <span class="black">utredninger</span> og deretter utrede disse utredningene, for deretter
-						   � utf�re utredninger basert p� utredningenes utredninger. Disse prosessene er ventet � ta n�rmere fem �r,
-						   og deretter skal 3D-direktoratet kunne tilrettelegge for og gi <span class="black">nyttig informasjon</span> om god bruk av 3D-printing,
-						   informasjon om hva som er lov � printe, 3D-kvoter og s� videre.
-                           <br/><br/>Denne siden vil kunne bidra med <span class="black">sp�rsm�l og svar</span>, gi deg som bruker noen ideer til designer du kan printe ut,
-			   og forklare hvordan 3D-printeren fungerer.</p>
+            <p class="velkommen">...den offisielle informasjonssiden for <span class="black">3D-printing.</span>
+                           <br/><br/>Denne siden vil kunne bidra med <span class="black">spørsmål og svar</span>, gi deg som bruker noen ideer til designer du kan printe ut,
+			   og forklare hvordan 3D-printeren fungerer.
 	</section>
 	<section>
-		<h2>Historie</h2>
+		<h1 id="historie">Historie</h1>
 		<h3>Begynnelsen</h3>
 		<p>3D-printing kan bli sporet tilbake til 1976, �ret da inkjet-printeren ble oppfunnet. I 1984 hadde utvikling med
 		   inkjet-konseptet f�rt til at printing-teknologien med blekk utviklet seg til printing-teknologien med materialer.
@@ -23,7 +27,7 @@
 		   Det f�rste modifiserte organet ble implantert i en pasient i 1999. En mann f�r en silikonisert urinbl�re ved bruk av
 		   en 3D-syntetisert stillas dusjet i pasientens egne celler. Dette �pner for nye metoder � modifisere og lage nye organer p�,
 		   inkludert � 3D-printe dem. Siden de blir laget med celler fra pasientene, er det s� � si ingen risk for avvisnig fra kroppen.</p>
-		   <a href="#" id="readmore">Les mer/mindre om 3D-printingen i moderne tid her</a>
+		   <button class="buttonStyle" id="readmore">Les mer</button>
 	</section>
 	<section id="merTekst">
 		<h3>I nyere tid</h3>
@@ -45,9 +49,11 @@
 	<script>
 		$(document).ready(function(){
 		$('#merTekst').hide();
-		$('a#readmore').click(function(){
+		$('#readmore').click(function(){
 		$('#merTekst').toggle(400);
+                $(this).text($(this).text() === 'Les mindre..' ? 'Les mer..' : 'Les mindre..');
 		});
 		});
+                
+                
 	</script>
-</body>

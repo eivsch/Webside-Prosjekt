@@ -55,7 +55,7 @@ li{
 
 .kategori{
     
-    zoom: 250%;
+   zoom: 250%;
     vertical-align: -4px;
     
     
@@ -83,13 +83,16 @@ box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
     
 }
 
+#spanError{
+    margin-left: 100px;
+}
+
 #mail{
     border-radius: 8px;
     position: absolute;
     bottom: 250px;
-    left: 850px;
+    left: 950px;
     top: 400px;
-   
     border: 4px dotted #FFA500;
     padding: 40px;
     padding-bottom: 50px;

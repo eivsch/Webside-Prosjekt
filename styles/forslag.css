@@ -21,12 +21,23 @@ letter-spacing:2px;
 h2{
     font-family: bonvenocflight, helvetica, arial;
     letter-spacing:2px;
-    border-bottom: 2px solid orange;
+    border-bottom: 2px solid red;
+    border-top: 2px solid red;
+    width: 300px;
+    
 }
 
 h3{
     font-family: bonvenocflight, helvetica, arial;
     letter-spacing:2px;
+     border-bottom: 2px solid orange;
+     width: 250px;
+}
+
+#historie{
+    color: black;
+    background-color: lightblue;
+    width: 500px;
 }
 
 #header{
@@ -93,14 +104,66 @@ min-width: 540px;
     background: linear-gradient(#4E9CAF, lightblue); 
 }
 
+#forsideDiv{
+    background-color: #333333;
+    margin-top: 140px;
+    width: 1377px;
+    margin-bottom: -152px;
+    padding-top: 30px;
+    padding-bottom: 30px;   
+    margin-left: -35px;
+    border-bottom: 10px solid lightblue;
+    
+}
+
+#forsideDiv{
+    text-align: center;
+
+}
+
+.forside{
+    display: inline-block;
+    border: 2px solid lightblue;
+   
+}
+
+#velkommenh1{
+    font-family: bonvenocflight, helvetica, arial;
+     background-color: #333333;
+     color: lightblue;
+     font-size: 4.5em;
+     letter-spacing: 10px;
+     position: absolute;
+     left: 20px;
+}
+#tilh1{
+    background-color: #333333;
+     position: absolute;
+     color: lightblue;
+     left: 25%;
+     top: 256px;
+     font-size: 4em;
+     letter-spacing: 8px;
+}
+
+#printh1{
+    background-color: #333333;
+    color: lightblue;
+     position: absolute;
+     left: 10.4%;
+     top: 333px;
+     font-size: 4em;
+     letter-spacing: 8px;
+}
 .velkommen{
+    color: #fff;
+    background-color: #333333;
     font-family: bonvenocflight, helvetica, arial;
     font-size: 1.3em;
     letter-spacing: 2px;
-    color: gray;
-    padding: 20px;
-    border-bottom: 2px solid lightblue;
-    
+    padding: 20px;   
+    text-align: center;
+    border-radius: 0px 0px 0px 0px;
 }
 
 .undersiderOverskrift{
@@ -112,14 +175,13 @@ min-width: 540px;
     width: 500px;
 }
 
-.ikoner{
-    margin-left: 150px;
-    
-}
 .black{
-    color: black;
+    color: lightblue;
 }
 
+.ikoner{
+    margin-left: 150px;
+}
 
 .footerContent{
 font-family: bonvenocflight, helvetica, arial;    
@@ -156,15 +218,20 @@ ul{
     clear:both;
     border-top: 2px dotted white;
     width: 1100px;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 40px;
     padding-top: 20px;
     text-align: center;
     font-family: bonvenocflight, helvetica, arial;
     color: lightblue;
     font-size: 0.9em;
+    margin-left: auto;
+    margin-right: auto;
   
+}
+
+#footerMargin{
+    margin-left: auto;
+    margin-right: auto;
 }
 
 footer {
@@ -174,5 +241,6 @@ footer {
         margin-left: -8px;
         margin-right: -8px;
         margin-bottom: -8px;
+        margin-top: 100px;
         
 }

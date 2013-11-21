@@ -1,15 +1,21 @@
+<?php
+	 error_reporting(E_ALL);
+?>
 <!DOCTYPE html>
-<html>
+<html lang="no">
 	<head>
-		<title>3D-direktoratet, din informasjonskilde til 3D-printing</title>
+		<title>3D-print.no</title>
 		<link rel="stylesheet" title="main" type="text/css" href="styles/external_styles/horizontalMenuStyle.css">
 		<link rel="stylesheet" title="main" type="text/css" href="styles/forslag.css">
                 <link rel="stylesheet" title="main" type="text/css" href="styles/logo.css">
 		<script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script charset="utf-8" src="scripts/external_scripts/horizontalMenuScript.js"></script>
-                <script src="external_scripts/jquery-1.10.2.js"></script>
                 <script charset="utf-8" src="scripts/scriptES.js"></script>
                 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+                <!--Css undersider-->
+                <link rel="stylesheet" title="main" type="text/css" href="styles/sideStil1.css">
+                <link rel="stylesheet" type="text/css" href="styles/form.css">
+                <link rel="stylesheet" type="text/css" href="styles/stylesheet2.css">
 	</head>
 	<body>
 		<script>
@@ -39,6 +45,7 @@
 			<button class="buttonStyle" id="normal">a</button>
 			
 		</header>
+                
 		<nav id="sse3">
 		<div id="sses3">
 			<ul>
@@ -47,8 +54,9 @@
 				<li><a href="index.php?p=sporsmol">Spørsmål</a></li>
 				<li><a href="index.php?p=design">Design</a></li>
 			</ul>
-		</nav>
 		</div>
+                    </nav>
+                    </div>
                 
 		<div id="content">
 
@@ -72,7 +80,7 @@
 		</div>
                 
              <footer>
-                 
+                 <div id="footerMargin">
                  <div class="footerContent">
                      <ul>
                          <li><p class="overskrift">Navigasjon</p></li>
@@ -83,21 +91,21 @@
                      </ul></div>
                  <div class="footerContent">
                      <ul>
-                         <li><p class="overskrift">Blabla</p></li>
-                         <li>bla</li>
-                         <li>bla</li>
-                         <li>bla</li>
-                         <li>bla</li>
+                         <li><p class="overskrift">Laget av:</p></li>
+                         <li>Simen Arvnes</li>
+                         <li>Carl P Reinsnes</li>
+                         <li>Thomas Sørmo</li>
+                         <li>Eivind Schulstad</li>
                      </ul></div>
                 <div class="footerContent">
                      <ul>
                          <li><p class="overskrift">Kontakt</p></li>
                          <li>Kundeservice@3dprint.com</li>
                          <li>+47 83475647</li>
-                         <li><img id="facebook" src="bilder/ikoner/facebook.png"></li>
+                         <li><a href='https://www.facebook.com/webprosjekt'><img id="facebook" src="bilder/ikoner/facebook.png" alt="facebook-ikon"></a></li>
                     </ul></div>
-                 
                  <p id="copyright">&copy; <em>3d-Print.no</em></p>
+                 </div>
              </footer>
 	</body>
 </html>
