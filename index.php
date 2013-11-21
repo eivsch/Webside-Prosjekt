@@ -5,23 +5,26 @@
 <html lang="no">
 	<head>
 		<title>
-                    <?php
-				switch($_GET["p"])
+            <?php
+            if(!empty($_GET["p"])){
+		    switch($_GET["p"])
 			{
 			case "modeller":
 			echo "Modeller";
 			break;
-			
+
 			case "sporsmol":
 			echo "Spørsmål";
 			break;
-			
+
 			case "design":
 			echo "Design";
 			break;
-			
+
 			default :
-			echo "Startsiden";
+			echo "";
+			} } else{
+			echo "Startside";
 			}
 			?>
                 </title>
@@ -32,25 +35,26 @@
 		<script charset="utf-8" src="scripts/external_scripts/horizontalMenuScript.js"></script>
                 <script charset="utf-8" src="scripts/scriptES.js"></script>
                 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-         
-                <?php
-				switch($_GET["p"])
+
+            <?php
+            if(!empty($_GET["p"])){
+		    switch($_GET["p"])
 			{
 			case "modeller":
 			echo "<link rel='stylesheet' title='main' type='text/css' href='styles/sideStil1.css'>";
 			break;
-			
+
 			case "sporsmol":
 			echo "<link rel='stylesheet' type='text/css' href='styles/form.css'>";
 			break;
-			
+
 			case "design":
 			echo "<link rel='stylesheet' type='text/css' href='styles/stylesheet2.css'>";
 			break;
-			
+
 			default :
-			echo " ";
-			}
+			echo "";
+			} }
 			?>
 	</head>
 	<body id="alpha">
@@ -61,8 +65,8 @@
 			$(this).attr("disabled",true);
 			$('.top').css('font-size', '+=10');
 			$('.top').css('font-family', 'sans-serif');
-                   
-                       
+
+
 			$('#normal').removeAttr("disabled");
                         });
 			$('#normal').click(function(){
@@ -81,9 +85,9 @@
 			</div>
                         <button class="buttonStyle" id="hemma">A</button>
 			<button class="buttonStyle" id="normal">a</button>
-			
+
 		</header>
-                
+
 		<nav id="sse3">
 		<div id="sses3">
 			<ul>
@@ -95,7 +99,7 @@
 		</div>
                     </nav>
                     </div>
-                
+
 		<div id="content">
 
 			<?php
@@ -116,7 +120,7 @@
 				}
 			?>
 		</div>
-                
+
              <footer>
                  <div id="footerMargin">
                  <div class="footerContent">
