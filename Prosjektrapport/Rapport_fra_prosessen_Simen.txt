@@ -1,0 +1,146 @@
+
+BILDELINKER:
+Disse bildene kan deles og brukes.
+
+Forside:
+http://www.google.no/imgres?as_st=y&hl=no&tbs=sur:f&tbm=isch&tbnid=iUfEkRbOpo78lM:&imgrefurl=http://www.flickr.com/photos/creative_tools/8121256273/&docid=e8nuEp7admp8aM&imgurl=http://farm9.staticflickr.com/8187/8121256273_f3ae1589f5_o.jpg&w=3452&h=2316&ei=HDCLUoD9BIGLtAbRv4DQAw&zoom=1&ved=1t:3588,r:17,s:0,i:141&iact=rc&page=2&tbnh=180&tbnw=274&start=11&ndsp=23&tx=213&ty=116
+http://www.google.no/imgres?as_st=y&hl=no&tbs=sur:f&tbm=isch&tbnid=u8TKOUZGoOeWXM:&imgrefurl=http://en.wikipedia.org/wiki/3D_printing&docid=P9rGdsStFDooOM&imgurl=http://upload.wikimedia.org/wikipedia/commons/f/f0/Printing_with_a_3D_printer_at_Makers_Party_Bangalore_2013_11.JPG&w=4928&h=3264&ei=HDCLUoD9BIGLtAbRv4DQAw&zoom=1&ved=1t:3588,r:3,s:0,i:99&iact=rc&page=1&tbnh=177&tbnw=274&start=0&ndsp=11&tx=136&ty=70
+
+Ikoner:
+http://modernuiicons.com/
+
+RAPPORT!
+
+Spørsmålsskjema:
+
+I forprosjektsrapporten ble det bestemt at det skulle være en funksjon som skulle kunne la
+brukeren sende inn spørsmål via et skjema. For å lage skjemaet skulle det brukes HTML, og for å
+lage mail funksjonen skulle PHP brukes. I og med at det også stod i forrapporten at det skulle
+i størst mulig grad implementeres WAI-ARIA, og også prøve å oppnå flest mulige WCAG- kriterier, var
+det viktig å gjøre litt research i forkant.
+
+WCGAG:
+ 
+Skjemaet ble først laget i en table, men fant ut at dette ikke var det beste alternativet for
+synshemmede. Dette fordi at i en table kan det bli en litt tilfeldig struktur som er vanskelig å
+skjønne for en synshemmet, og de må da gjette seg til mye av hva de skal kunne skrive hvor.
+For at det skal bli enklere for synshemmede å forstå skjemaet ble det brukt semantiske tagger
+som forklarer logisk hva man ser på. 
+Skjema lages inne i en <form> - tag. Videre ble det laget to grupper med <figure>- taggen.
+Det den gjør er at den grupperer felter som logisk henger sammen. Som i skjemaet er det først
+definert en gruppe der man velger en kategori for spørsmålet, deretter skriver spørsmålet.
+I andre gruppe er det definert personalia som navn, epost og tlf. 
+For at en synshemmed (men også visuelt) skal se hva slags gruppering man ser på, bruker
+man <legend>- taggen for å lage en overskrift til den logiske gruppen <figure>.
+Til de forskjellige <input> 'ene (tekstfeltet, radioknappene, sjekkboksen eller send-knappen)
+blir det brukt <label> -taggen. Dette er ikke til stor fordel for en synshemmed, men heller en som
+bruker mus. Label'en kobles til input'ene  med en id. Slik at om du trykker på label'en, for eks.
+Navn:, så vil du kunne begynne å skrive umiddelbart i tekstfeltet uten å trykke på tekstfeltet.
+De logiske gruppene er satt inn i en <ul> tag, videre i <li>- tagger. Som nevt tidligere 
+er det ikke logisk å bruke en table. Fordelen med en liste er at rekkefølgen er mer logisk.
+I en table vil det være usikkert om man skal gå kolonnevis eller radvis. Fordelen med å bruke liste:
+- logisk rekkefølge på felter
+- grupperte data
+- strukturen repeterer seg
+Det vil derfor være et bedre alternativ for en synshemmed. 
+Hver input har dessuten sin egen tabindex som går nedover i den rekkefølgen man ser visuelt, men er
+kanskje viktigst nederst fordi det er viktig at brukere som ikke ser ikke kommer rett på send-knappen
+før de har bekrefet skjemaet. Tabindex er for brukere som ikke bruker mus. 
+Utenfor skjemaet er det en sjekkboks for å bekrefte opplysningene og en send-knapp. Disse er 
+plassert utenfor <fieldset>- taggen fordi de skal være lette å finne, og fordi de ikke har sammenheng med 
+å fylle ut skjemaet, men å få sendt skjemaet.
+
+Hva kunne blitt gjort bedre?
+Her føler jeg det er blitt gjort en god del riktige avgjørelser i forhold til WCAG-kravene.
+Jeg kunne ha sjekket bedre hvilken kategori de forskjellige taggene og og atributtene ligger i; om de er A, AA eller AAA.
+
+
+WAI-ARIA:
+
+I forrapporten var en av kravene at vi skulle implementere så mye WAI-ARIA som vi kunne og
+fikk tid til. Dette syntes jeg var viktig å prøve å få med i skjemaet, i og med at vi hadde
+et fokus på brukervennelighet og universell utforming på siden vår.
+Det å gjøre research, finne ut hvor WAI-ARIA burde implementeres i et skjema, gikk ganske greit.
+Det er et ganske nytt felt for min del, og det var en del å sette seg inn i, men det virket ikke
+som om det var så mye WAI-ARIA man trengte i et skjema.
+Problemene oppsto da jeg skulle implementere WAI-ARIA. For dette prøvde jeg å gjøre rimelig
+tidlig i prosessen.
+På dette tidpunktet var det forsøkt å tilfredstille WCAG-krav i skjemaet, og det som viktige som
+gjenstod var å fortelle en synhemmed at et felt i skjema er obligatorisk å fylle ut eller huke av
+for å kunne sende inn skjemaet. 
+For å gjøre dette brukte jeg "aria-required='true'". Det fungerte fint i browser uten noen feilmeldinger.
+Men i W3 validatoren ble det feil melding for bruk av "aria-required='true" på radioknappene og
+sjekkboksen. Tekstfeltene gikk igjennom validatoren med "aria-required=true'". 
+Mye av tiden i hver jobbøkt ble brukt til å finne en løsning på problemet, men det funkerte forsatt ikke.
+Jeg søkte på sider som omhandlet universell utforming, også "medialt.no". Jeg har gjort akkurat som
+det blir illustrert på disse sidene, og det har fungert på tekstfeltene. Men i og med at det ikke
+skal være noen feilmeldinger på validatoren, var jeg nødt til å ta vekk disse. 
+Tenkte videre at det kunne være en tekst (med tabindex) før radioknappene og sjekkboksene som forklarer
+at disse er obligatoriske og heller beholde wai-aria på tekstfeltene.
+
+Hva kunne blitt gjort bedre?
+Her ble det ikke gjort særlig mye, selv om jeg prøvde en god del for å få det til. Jeg lastet også ned "Thunder screenreader" for å 
+kontrollere at skjemaet kunne fungert for en synshemmed, men jeg fikk ikke programmet til å fungere på nettet i det hele tatt.
+Det fungerte bare på desktop for min del. Jeg kunne ha satt meg mer inn i dette programmet, evt. lastet ned et annet program.
+For på dette tidpunktet er jeg ikke 100% sikker på om skjemaet er godt nok for en synshemmed.
+
+PHP:
+
+For å skape de funksjonene som følger med skjemaet valgte jeg å bruke PHP. Dette fordi det er
+et språk jeg hadde vært borte i tidligere i faget "grunnleggende programmering", og fordi
+jeg ville bygge videre på dette og lære mer om PHP. En annen viktig grunn er at det ville vært 
+uguntig å bruke javascript for å validere skjemaet fordi brukeren kan skru av javascript om 
+ønskelig. Så det må uansett PHP til for å validere et skjema, og derfor valgte jeg å bruke dette
+i de andre funksjonene også.
+Først defineres variablene for de forksjellige feltene. Dersom de er fylt ut vil disse dataene
+legge seg inn i disse variablene. Det defineres også variabler for som inneholder en feilmelding
+til brukeren. Om et obligatorisk felt er tomt og knappen "send" blir trykket på, vil disse bli hentet
+fram. Det kan man se i "if, else" setningene under variablene. Feilmeldingene blir lagt inne i de
+obligatoriske feltene og dukker opp som rød skrift etter brukeren har trykket send og feltet er tomt.
+For brukervennelighet er det også en PHP-funksjon som er implementert inne i de obligatoriske feltene,
+som husker hva du har skrevet og lagrer disse dataene i tifelle man trykker på "send" og ikke har
+fylt ut alle de nødvendige feltene.
+Siste delen av skjemaet er å sende dataene som en mail, inn til kundeservice.
+Her sjekker funksjonen om sjekkboks er huket av og sendknappen trykket. Hvis de er det, sjekker den
+om alle de obligatoriske feltene er fylt ut. Hvis alt dette stemmer vil den sende en mail med 
+dataene fra skjemaet. Det er 4 ledd i en mail:
+- Til: $to. Henter mailen fra den brukeren skriver inn, så det kan sjekkes at mailen fungerer. Ellers
+ville det selvsagt vært mailen til print.no.
+- Fra: $from. Henter mailen brukeren skriver inn.
+- Hva det gjelder: $subject. Henter hvilken kategori man huket av på radioknappene.
+- Spørsmålet og telefonnummer: $body. Henter spørsmålet og telefonnummeret til brukeren.
+For å sende og hente disse dataene har jeg brukt en metode, POST. POST sender dataene gjennom HTTP, en annen
+metode "GET" sender informasjonen gjennom URL'en, og er dermed litt mindre sikkert. POST er heller
+ikke spesielt sikkert, men sjuler ihvertfall informasjonen som blir sendt.
+Funksjonen sjekker også om "send" er trykket på og ikke sjekkboksen er huket av. I det tilfellet
+vil det komme en feilmelding på at brukeren må bekrefte opplysningene.
+
+I starten laget jeg 2 sider for opplysningene med bruk av SESSIONS. SESSION er en superglobal variabel som lar deg ta vare
+på data over flere sider, siden $_REQUEST bare tar vare på data til neste side. Først skulle brukeren sende opplysningene, bekrefte de på neste side, og sende mailen
+på en 3 side. Etterhvert så jeg dette var ugunstig for en synshemmed og rett og slett unødvendig generelt. "KISS". 
+
+Hva kunne jeg gjort bedre?
+PHP'en fungerer som den skal. For mer ryddig kode kunne jeg inkludert PHP'en i HTML dokumentet. Jeg hadde også lyst til å ekspandere
+undersiden med en FAQ seksjon på siden, men for å få til det jeg ville måtte jeg ha brukt databaser, noe jeg ikke har kjennskap til.
+Det viktigste var å få gjort ferdig de opprinnelige kravspec'ene, og i og med at det dukket opp uforutsatte problemer mot slutten, så 
+ble det ikke tid til dette.
+
+CSS:
+
+Syntes det var viktig at skjemaet skulle fremstå seriøst og oversiktelig. Har hentet inspirasjon
+fra forskjellige bedriftsider som har skjema, deriblant "posten.no". All css'en er gjort med det
+jeg har lært i faget og på egenhånd hittil, pluss at jeg har vært på nettet for å finne ut hvordan man
+forstørrer radioknapper, sjekkbokser og tekstfeltene. Også hvordan man fjerner en knapp i høyre
+hjørnet på spørsmål tekstfeltet som lot brukeren forstørre tekstfeltet så mye man ville.
+For å få et lett leselig og oversiktelig skjema (også visuelt) ble mye gjort med strukturen i HTML'en, men 
+som å forstørre elementer og ha en lett leselig font, var med på å underbygge dette. 
+Det var også viktig å vise visuelt hvilke felter som er obligatoriske, det blir også forklart over 
+skjemaet.
+
+
+INKSCAPE og GIMP:
+
+For å scalere og redigere bilder ble det brukt to programmer; Inkscape og Gimp. Gimp ble brukt hovedsakelig til å scalere bildene på siden, og eksportere 
+bildene som .PNG format. Inkscape ble brukt til å redigere ikonene på siden, dvs. skifte farge, skalere de og eksportere ikonene som .PNG.
+Særlig for ikonene var det litt viktig å bruke .PNG format fordi jeg ville at bakgrunnen skulle være transparent (.PNG støtter dette) i tilfelle det passet
+seg med en bakgrunnsfarge for eks. Nå ble dette bare tilfellet på facebook-ikonet, som skifter bakgrunnsfarge når musepekeren dras over den.
