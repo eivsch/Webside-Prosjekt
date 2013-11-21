@@ -12,7 +12,7 @@
             <p class="velkommen">...den offisielle informasjonssiden for <span class="black">3D-printing.</span>
                            <br/><br/>Denne siden vil kunne bidra med <span class="black">spørsmål og svar</span>, gi deg som bruker noen ideer til designer du kan printe ut,
 			   og forklare hvordan 3D-printeren fungerer.
-	</section>
+	
 	<section>
 		<h1 id="historie">Historie</h1>
 		<h3>Begynnelsen</h3>
@@ -46,6 +46,7 @@
 		<p>S�, i 2011 kommer en rekke gjennombrudd. Det f�rste 3D-printede robotflyet, bilen og gull- og s�lvprodukter blir lagd. Det nyeste
 		   gjennombruddet kom med implanteringen av den f�rste 3D-printede kunstige kjeven i 2012.</p>
 	</section>
+            </section>
 	<script>
 		$(document).ready(function(){
 		$('#merTekst').hide();

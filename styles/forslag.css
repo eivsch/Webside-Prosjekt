@@ -24,7 +24,6 @@ h2{
     border-bottom: 2px solid red;
     border-top: 2px solid red;
     width: 300px;
-    
 }
 
 h3{
@@ -106,7 +105,7 @@ min-width: 540px;
 
 #forsideDiv{
     background-color: #333333;
-    margin-top: 140px;
+    margin-top: 93px;
     width: 1377px;
     margin-bottom: -152px;
     padding-top: 30px;
@@ -141,7 +140,7 @@ min-width: 540px;
      position: absolute;
      color: lightblue;
      left: 25%;
-     top: 256px;
+     top: 257px;
      font-size: 4em;
      letter-spacing: 8px;
 }
@@ -151,7 +150,7 @@ min-width: 540px;
     color: lightblue;
      position: absolute;
      left: 10.4%;
-     top: 333px;
+     top: 334px;
      font-size: 4em;
      letter-spacing: 8px;
 }

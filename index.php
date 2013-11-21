@@ -4,7 +4,27 @@
 <!DOCTYPE html>
 <html lang="no">
 	<head>
-		<title>3D-print.no</title>
+		<title>
+                    <?php
+				switch($_GET["p"])
+			{
+			case "modeller":
+			echo "Modeller";
+			break;
+			
+			case "sporsmol":
+			echo "Spørsmål";
+			break;
+			
+			case "design":
+			echo "Design";
+			break;
+			
+			default :
+			echo "Startsiden";
+			}
+			?>
+                </title>
 		<link rel="stylesheet" title="main" type="text/css" href="styles/external_styles/horizontalMenuStyle.css">
 		<link rel="stylesheet" title="main" type="text/css" href="styles/forslag.css">
                 <link rel="stylesheet" title="main" type="text/css" href="styles/logo.css">
@@ -12,24 +32,42 @@
 		<script charset="utf-8" src="scripts/external_scripts/horizontalMenuScript.js"></script>
                 <script charset="utf-8" src="scripts/scriptES.js"></script>
                 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-                <!--Css undersider-->
-                <link rel="stylesheet" title="main" type="text/css" href="styles/sideStil1.css">
-                <link rel="stylesheet" type="text/css" href="styles/form.css">
-                <link rel="stylesheet" type="text/css" href="styles/stylesheet2.css">
+         
+                <?php
+				switch($_GET["p"])
+			{
+			case "modeller":
+			echo "<link rel='stylesheet' title='main' type='text/css' href='styles/sideStil1.css'>";
+			break;
+			
+			case "sporsmol":
+			echo "<link rel='stylesheet' type='text/css' href='styles/form.css'>";
+			break;
+			
+			case "design":
+			echo "<link rel='stylesheet' type='text/css' href='styles/stylesheet2.css'>";
+			break;
+			
+			default :
+			echo " ";
+			}
+			?>
 	</head>
-	<body>
+	<body id="alpha">
 		<script>
 			$(document).ready(function(){
 			$('#normal').attr("disabled",true);
 			$('#hemma').click(function(){
 			$(this).attr("disabled",true);
-			$('#alpha').css('font-size', '+=10');
-			$('#alpha').css('font-family', 'sans-serif');
+			$('.top').css('font-size', '+=10');
+			$('.top').css('font-family', 'sans-serif');
+                   
+                       
 			$('#normal').removeAttr("disabled");
-			});
+                        });
 			$('#normal').click(function(){
-			$('#alpha').css('font-size', '-=10');
-			$('#alpha').css('font-family', 'Times New Roman');
+			$('.top').css('font-size', '-=10');
+			$('.top').css('font-family', 'Times New Roman');
 			$('#normal').attr("disabled",true);
 			$('#hemma').removeAttr("disabled");
 			});
