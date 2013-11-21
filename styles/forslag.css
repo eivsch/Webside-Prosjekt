@@ -186,9 +186,7 @@ min-width: 540px;
 font-family: bonvenocflight, helvetica, arial;    
 color: lightblue;
 word-wrap: break-word;
-width: 250px;
-margin-top: 30px;
-margin-left: 150px;
+margin-left: 15%;
 display: inline-block;
  
 }
@@ -211,6 +209,7 @@ ul{
 .navigasjon{
     color: lightblue;
     text-decoration: none;
+    
 }
 
 #copyright{
@@ -229,8 +228,10 @@ ul{
 }
 
 #footerMargin{
+    
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
 }
 
 footer {
