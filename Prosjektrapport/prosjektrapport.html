@@ -4,10 +4,19 @@
 		<title>Prosjektrapport</title>
 	</head>
 	<body>
-		<h1>Prosjektrapport</h1>
+		<h1>Rapport for hovedprosjekt i Webprosjekt</h1>
+		<p>Høgskolen i Oslo og Akershus, 30/10 - 24/11/2013</p>
+		<h4>Gruppemedlemmer:</h4>
+		<ul>
+			<li>Simen Muri Arvnes</li>
+			<li>Carl Petter Reinsnes</li>
+			<li>Eivind Schulstad</li>
+			<li>Thomas Sørmo</li>
+		</ul>
 
 		<h3>Resymé</h3>
-		<p>Denne rapporten inneholder en beskrivelse av prosjektet vårt, metodene vi brukte, og resultatene vi fikk.</p>
+		<p>Dette er en rapport om avsluttende prosjekt i Webprosjektfaget, og inneholder en beskrivelse av nettsideprosjektet
+		   vårt, resultatene våre og vår egen evaluering av fremgangen.</p>
 
 		<h2>Forord</h2>
 		<p>Dette prosjektet er et samarbeid mellom oss fire i anledning at det er avsluttende prosjekt for Webprosjekt.
@@ -15,33 +24,376 @@
 		   metodene vi hadde blitt lært i Webprosjekt.</p>
 
 		<h2>Innhold</h2>
+		<ul>
+			<li><a href="#Innledning">Innledning</a></li>
+			<li><a href="#Metoder">Metoder</a></li>
+			<li><a href="#Beskrivelse">Beskrivelse av resultatene</a></li>
+			<li><a href="#Evaluering">Evaluering</a></li>
+			<li><a href="#Konklusjon">Konklusjon</a></li>
+			<li><a href="#Begrep">Begrepsliste</a></li>
+			<li><a href="#Vedlegg">Vedlegg</a></li>
+		</ul>
 
-		<h2>Innledning</h2>
-		<p>Som avsluttende prosjekt i Webprosjektfaget skulle vi samarbeide om å lage en nettside ved bruk av HTML, CSS
-		   og minst en av metodene JS/JQuery eller PHP, samt at vi kunne bruke en del godkjente metoder og programmer fra
-		   nettet. Vi bestemte oss for en nettside om 3D-printing. Den opprinnelige tanken var at dette kunne være en slags
-		   statlig versjon av  en infoside om 3D-printing, siden vi regner med at det med tiden kommer til å bli et behov for
-		   det med tanke på kontroversene rundt muligheten for å produsere våpen med en 3D-printer.
-		   Det ble til en jevn arbeidsfordeling som er beskrevet videre nedenfor.</p>
+		<section id="Innledning">
+			<h2>Innledning</h2>
+			<p>Som avsluttende prosjekt i Webprosjektfaget skulle vi samarbeide om å lage en nettside. Vi bestemte oss for en
+			   nettside om 3D-printing. Den opprinnelige tanken var at dette kunne være en slags statlig versjon av  en infoside
+			   om 3D-printing, siden vi regner med at det med tiden kommer til å bli et behov for det med tanke på kontroversene
+			   rundt muligheten for å produsere våpen med en 3D-printer. Det endte med at vi lagde noe som var en mer uavhengig
+			   rettet infoside, som skulle gi inntrykk av profesjonalitet.</p>
+			<p>Våre mål for hva siden skulle tilby, i henhold til forprosjektrapporten:</p>
+			<ul>
+				<li>Kunne trykke på lenker for å automatisk kunne komme til en ny del av siden</li>
+				<li>Skifte mellom undersider</li>
+				<li>Trykke på lenker eller knapper for å lese mer om noe</li>
+				<li>Skrive inn spørsmål på et skjema for å sende det inn per mail</li>
+				<li>Laste ned 3D-modeller til printing</li>
+				<li>Kunne forstørre bilder ved å trykke på dem</li>
+				<li>Programmere inn WAI-ARIA for at brukeren skal kunne høre teksten også</li>
+				<li>Kunne skifte mellom to skriftstørrelser</li>
+			</ul>
+		</section>
 
-		<h2>Metoder</h2>
-		<p>Vi hadde fem sider å jobbe på, hver mann hadde en side, i tillegg til en side som inneholdt rammen.
-		   Som nevnt bestemte vi oss for å lage en profesjonell infoside om 3D-printing. Dermed ble det visuelle inntrykket
-		   nedprioritert, vi bestemte oss for å ha en rimelig grei felles CSS, noe vi fikk lett til ved å bruke PHP til å
-		   implementere sidene. Rammen fikk også en knapp for det vanlige inntrykket og et universelt inntrykk, at ved å
-		   trykke på universell-knappen fikk en tekst som var større og sans-serif, og ved å trykke på vanlig-knappen fikk
-		   en tekst som var i opprinnelig størrelse og opprinnnelig font-type. De ble programmert slik at vanlig-knappen
-		   ikke ville fungere når inntrykket var på vanlig, det samme gjelder universell-knappen.</p>
+		<section id="Metoder">
+			<h2>Metoder</h2>
+				<h3>Arbeidsfordeling</h3>
+					<p>I henhold til forporsjektrapporten jobbet vi med hver vår side, i tillegg til at vi hadde ekstraoppgaver i forhold
+					   til alt det vi ville ha som use cases på siden.</p>
+					<ul>
+						<li>Carl Reinsnes lagde en side kalt index.php, som var rammeverket. Her ble undersidene implementert.
+						    Lagde i tillegg hovedsiden.</li>
+						<li>Thomas Sørmo lagde en side med forskjellige 3D-modeller til printing. Jobbet sammen med Eivind Schulstad
+						    om Easter Egg</li>
+						<li>Eivind Schulstad lagde en side med info om 3D-printere og forskjellige modeller. Jobbet sammen med Thomas Sørmo
+						    om Easter Egg.</li>
+						<li>Simen Arvnes lagde en internettside som skulle kunne sende inn et skjema med spørsmål til administratoren.
+							I tillegg til å programmere dette i PHP, sto han for felles CSS i rammeverket.</li>
+					</ul>
 
+				<h3>Brukte teknologier og verktøy</h3>
+					<h4>Teknologier</h4>
+					<ul>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>JavaScript</li>
+						<li>JQuery</li>
+						<li>PHP</li>
+						<li>WAI-ARIA</li>
+					</ul>
+					<h4>Verktøy</h4>
+					<ul>
+						<li>NotePad</li>
+						<li>TextPad</li>
+						<li>Nettleserne FireFox og Chrome(for testing av sidene)</li>
+						<li>GitHub(versjonshåndtering)</li>
+						<li>Inkscape</li>
+						<li>GIMP</li>
+						<li>WCAG</li>
+					</ul>
+
+				<h3 id="Arbeid">Arbeidsmetode</h3>
+					<p>Vi hadde fra starten av en intensjon om å jobbe mest mulig individuelt. Dette kom av den enkle grunnen at vi rett og
+					   slett kom fra forskjellige linjer, hadde forskjellige ledige tider, og derfor stort sett hadde best mulighet til å møtes
+					   i webprosjekt-labene på tirsdager. Vi hadde mulighet til å jobbe individuelt ved at vi ganske enkelt kunne dele alt på
+					   GitHub, som vi valgte å bruke siden vi ikke bare ville jobbe inividuelt, men det gjorde at vi ikke mistet arbeid.</p>
+					<p>De siste to ukene la vi derimot merke til at nå var tiden kommet for å samle arbeidet, og da fant vi ut at vi hadde en god
+					   del arbeid å gjøre for å synkronisere alt sammen. Dermed ble det til flere møter nest siste uke, og nesten hver dag siste
+					   uke for å få alt på skinner.</p>
+
+				<h3 id="Milepæl">Milepælsplan</h3>
+					<p>Vi satte opp en plan for forskjellige milepæler, eller 'faser', om du vil. Dette var endelige tidspunkt for enkelte
+					   deler av prosjektet, og siste frist for å påbegynne andre deler av prosjektet.</p>
+					<p>I tiden fra første til andre fase, 30/10 - 6/11, hadde vi følgende mål:
+					<ul>
+						<li>Ha levert in forprosjektrapporten</li>
+						<li>Ha begynt å utforme basis-delen av sin egen side</li>
+					</ul>
+					<p>Ikke mange problemer knyttet til dette. Begge mål ble oppfylt. I begynnelsen hadde vi ikke så store arbeidskrav,
+					og var den preget av dårlig struktur og lite kommunikasjon.</p>
+
+					<p>I tiden mellom andre og tredje fase, 6/11 - 17/11, hadde vi følgende mål:
+					<ul>
+						<li>Være ferdig med basis-delen til sin egen side</li>
+						<li>Helst ha påbegynt JQuery og JavaScript helt i starten, men ikke et must</li>
+						<li>Ha påbegynt PHP-arbeidet</li>
+						<li>Begynne å se på sluttrapporten</li>
+					</ul>
+					<p>Selv om man stort sett ble ferdig med det grunnleggende til nettsiden, valgte noen å bruke mer tid på å implementere
+					   Javascript eller JQuery. Simen gjorde ikke dette, siden han hadde hovedansvaret for felles CSS, og heller ikke
+					   Carl. Selve innholdet på hovedsiden var stort sett en historisk oversikt over 3D-printingens historie. Det meste
+					   av arbeidet til Carl ble derfor lagt ned i rammen. PHP-en var ferdig tidlig i denne fasen. I tillegg utsatte
+					   vi å se på sluttrapporten.</p>
+
+					<p>I tiden mellom tredje fase og fristen for innlevering, 17/11 - 24/11, hadde vi følgende mål:</p>
+					<ul>
+						<li>PHP-en skulle være ferdig</li>
+						<li>Alt skulle samles og settes inn i rammeverket sammen, helst med en gang</li>
+						<li>Nå skulle vi begynne å jobbe med denne rapporten</li>
+					</ul>
+
+					<p>Her var det delvis måloppnåelse. PHP-en ble som nevnt tidlig ferdig, og var aldri et problem. Opprinnelig var tanken å samle alt
+					   på første dag i siste uke, isteden samlet vi alt tre dager før, noe som var mget heldig for oss: Det viste seg at det meste
+					   kolliderte i vår felles CSS, GitHub-siden var rotete og uoversiktlig, og en del grunnleggende saker var ikke fullstendig
+					   på plass. Det ble dermed til at vi måtte bruke tre-fire dager på å rydde opp i alt dette. Deretter oppdaget vi at noen av
+					   tilleggsfunksjonene ikke var optimale, og at vi, etter å ha samlet alt, ville forbedre det visuelle inntrykket, som hadde
+					   blitt nedprioritert ved siden av alt det andre arbeidet.</p>
+
+					<p>Det viste seg også at kravene til rapporten var litt større og krevde mer arbeid enn først forventet. Derfor startet vi tidligere
+					   med å samle dokumentasjon og skrive på den.
+		</section>
+
+		<section id="Beskrivelse">
+			<h2>Beskrivelse av resultatene</h2>
+
+			<h3>Felles struktur</h3>
+				<p>Denne siden består av en hovedside og tre undersider. Hovedsiden gir et lite innblikk i 3D-printingens historie. En av undersidene
+				   heter spørsmål, her kan man sende inn spørsmål til administratoren. Den andre undersiden viser flere forskjellige modeller
+				   av 3D-printere, og den siste viser en rekke nedlastbare 3D-design. Siden har et felles rammeverk, som består av en header med
+				   en menylinje, samt en footer med facebook-lenke, navigasjon og kontakside.</p>
+
+			<h3>Sidenes struktur</h3>
+				<h4>Hovedsidens struktur:</h4>
+				<ul>
+					<li>Den består av en uthevet skrift øverst, som ønsker deg velkommen til siden, og forklarer bakgrunnen </li>
+				    <li>Deretter kommer en tekst om 3D-printingens historie. Ved å trykke på linken som heter 'les mer/mindre om
+				   		3D-printingen i moderne tid her' kan du velge å vise eller skjule informasjon om 3D-printingens utvikling</li>
+				</ul>
+
+				<h4>Modellsidens struktur:</h4>
+				<p>Siden er laget som en underside til hovedsiden 3dprint.no. Den inneholder litt generell informasjon
+					om 3D-printere, samt informasjon om et lite utvalg på 6 forskjellige printere. Det finnes
+					svært mange forskjellige modeller, men vi ønsket å holde siden så enkel så mulig.</p>
+				<ul>
+				   <li>Først kommer en overskrift og et ikon som forteller brukeren hvor han/hun er kommet</li>
+ 				   <li>Deretter følger to korte tekstbolker stilt ved siden av hverandre med hver sin overskrift som
+ 				   	   gir brukeren litt grunnleggende info om 3D-printere, hvordan de fungerer, teknologier og materialer.
+ 				       Dette først og fremst for at de skal forstå bedre informasjonen som kommer nedenfor om selve modellene</li>
+ 				   <li>Denne oversikten består av 6 forskjellige 3Dprintere, 3 på hver linje med hvert sitt tilhørende bilde
+ 				       og tekst. Under hver tekst ligger en "Les mer" knapp. Når brukeren trykker på denne vises det mer
+ 				       informasjon om den tilhørende modellen. Dette er for holde sidens design så enkel som mulig. Dersom
+ 				       brukeren trykker på knappen på nytt, vil teksten skjules igjen</li>
+ 				</ul>
+
+ 				<h4>Spørsmålssidens struktur</h4>
+ 				<p>I forprosjektsrapporten ble det bestemt at det skulle være en funksjon som skulle kunne la
+					brukeren sende inn spørsmål via et skjema. For å lage skjemaet skulle det brukes HTML, og for å
+					lage mail funksjonen skulle PHP brukes. I og med at det også stod i forrapporten at det skulle
+					i størst mulig grad implementeres WAI-ARIA, og også prøve å oppnå flest mulige WCAG- kriterier, var
+					det viktig å gjøre litt research i forkant.</p>
+ 				<ul>
+ 					<li>Siden består utelukkende av et spørreskjema.</li>
+ 					<li>Først kan man bestemme hva henvendelsen gjelder. Deretter kan man  skrive inn selve spørsmålet.</li>
+ 					<li>Deretter kan man fylle inn kontaktinfo før man sender det inn.</li>
+ 					<li>Det er lagt inn funksjoner som gjør at man MÅ fylle inn hva henvendelsen gjelder, skrive i spørsmålsboksen,
+ 						fylle inn e-postadresse og bekrefte opplysningene før man sender inn.</li>
+ 				</ul>
+
+ 				<h4>Designsidens struktur</h4>
+
+ 			<h3 id="Felles">Felles implementeringer</h3>
+ 				<ul>
+ 					<li>HTML: Rammen har en head som lenker til JavaScript og CSS. Øverst i body ligger scriptet til JQuery, og deretter følger
+ 						diverse div-er for å identifisere logoen og menyen og forme disse spesielt i CSS-en. På bunnen kommer en footer med
+ 						anchor-lenker til undersidene pluss facebook-link og kontaktinformasjon.</li>
+ 					<li>PHP: Rammens viktigste innhold er PHP-en. Den fungerer slik at alle sidene ligger i en folder som heter 'pages'. Ved å kalle hver av undersidene med index.php?p= der
+						p får forskjellig verdi for hver av undersidene, gjør det at når man kaller den verdien som står på en av undersidene, så inkluderer
+						rammeverket den teksten så lenge den slutter med .inc.php. Hvis det ikke finnes en side som har lik verdi, får man feilmelding.
+						Helt mot slutten oppdaget vi at vi fikk et problem med PHP-en da alle undersidene hadde en head-tag i tillegg til den i rammen.
+						For å få det til å funke, måtte PHP-en i rammen programmeres slik at den inkluderte de forskjellige stilarkene i forskjellige
+						undersider.</li>
+						I tilfellet ingen av delene, får man hjemmesiden. som ligger automatisk knyttet til index.php.</li>
+ 					<li>JavaScript: implementerer menylinjens funksjon.</li>
+ 					<li>CSS: Alle sidene sin CSS blir implementert i rammen. En PHP-funksjon gjør at CSS-sidene linker til forskjellige
+ 						stilark. dette måtte vi gjøre fordi HTML-en ikke validerte med flere body-tager og head-tager. Dermed måtte alt
+ 						inkluderes i rammen og skilles for hver side.</li>
+ 					<li>JQuery: Jquery implementerer to knapper, den ene har bokstaven 'A', mens den andre har 'a'. Når man først kommer
+ 				   		inn på siden, er 'a'-knappen deaktivert og 'A'-knappen er aktivert. Ved å trykke på 'A'-knappen, deaktiveres den,
+ 				   		'a'-knappen aktiveres og teksten blir ti piksler større og får font-typen sans-serif. Ved å trykke på 'a'-knappen
+ 				   		etter dette, deaktiveres denne knappen, 'A'-knappen aktiveres og teksten blir ti piksler mindre og får opprinnelig
+ 				   		font-type tilbake.</li>
+ 				</ul>
+
+ 			<h3>Sidenes implementeringer</h3>
+				<h4>Hovedsidens implementeringer</h4>
+					<p>Hovedsiden består av et HTML5-dokument og JQuery. Ellers alt som er felles for alle sidene.</p>
+					<ul>
+						<li>HTML: Siden bruker bare section-tag med forskjellige id-er, for å kunne identifisere hva som skulle formes i CSS, samt
+							for å kunne bruke implementere JQuery med det. Siden er lagret som .inc.php for at den skal bli implementert i rammen.</li>
+						<li>CSS: Siden bruker bare felles CSS, har ikke eget stilark.</li>
+						<li>JQuery: Siden implementerer en lenke på bunnen av siden. Ved å trykke på knappen, kan man velge å lese mer/mindre
+							om 3D-printingens utvikling etter årtusenskiftet.</li>
+					</ul>
+
+			<h4>Modellsidens implementeringer</h4>
+				<p>Undersiden "Modeller" er i hovedsak gjort opp av et HTML5 dokument, et CSS3 stilark, et
+					Javascript, samt noe WAI-ARIA. I tillegg kommer naturligvis det som er felles for alle sidene.</p>
+				<ul>
+					<li>HTML: Siden er lagret som .inc.php. I selve HTMLen er det forsøkt å bruke så mange semantiske tagger som mulig, for å gjøre koden
+   						mest mulig oversiktlig og klar, og i tillegg er det brukt attributter som "id" og "class" på de aller
+   						fleste tagger for lettere å kunne referere til dem i f.eks CSS og JS. Alt innhold på siden, bortsett fra overskriften
+   						og ikonet, ligger i en section med id="models". Deretter kommer det to infotekster, som ligger i hver sin div med
+   						class="infoTekst", slik at de er stilet likt. Deretter  modelloversikten, med tilhørende overskrift i en h2.
+  				 		Oversikten er strukturert slik at presentasjonen av hver enkelt printermodell ligger i et slags vindu,
+   						utgjort av en div med class="outer". Dette fordi at alle de totalt 6 vinduene skal ha mye felles CSS. </li>
+   					<li>CSS: Sidens CSS er utgjort av flere stilark som er felles for alle undersider. I tillegg har siden et
+   						unikt stilark i filen _minstil1.css. Det viktigste innholdet i stilarket er "float". Det er dette
+   						som får de to infotekstene på toppen av siden til å stå ved siden av hverandre, og tilsvarende for modeloversikten.
+   						Uten denne ville de ulike HTML-elementene kun stått i en kolonne nedover.</li>
+   					<li>JavaScript: Siden har et javascript som inneholder en funksjon for 6 "les mer" knapper. Når man trykker på knappene
+   						vises det skjult tekst tilhørende den knappen det ble trykket på, i tillegg til at teksten på knappen forandres til
+   						"les mindre". Trykker man på knappen en gang til vil altså teksten bli skjult igjen.</li>
+   					<li>WAI-ARIA: Det er også lagt til WAI-ARIA funksjonalitet, slik at skjermleseren før beskjed om at knappen skjuler/viser
+   						en tekst. Dette gjøres ved at knappen har et attributt "aria-expanded = ", som veksler mellom verdiene "true" eller
+   						"false", avhengig av om den skjulte teksten vises eller ikke.</li>
+				</ul>
+
+			<h4>Spørsmålssidens implementeringer</h4>
+				<p>Siden består av et HTML5-dokument, PHP, CSS, WCAG og WAI-ARIA</p>
+				<ul>
+					<li>HTML: Skjema lages inne i en form-tag. Videre ble det laget to grupper med figure-taggen. Det den gjør er at den
+						grupperer felter som logisk henger sammen. For at en synshemmed (men også visuelt) skal se hva slags gruppering man
+						ser på, bruker man legend-taggen for å lage en overskrift til den logiske gruppen figure. Til de forskjellige input 'ene
+						(tekstfeltet, radioknappene, sjekkboksen eller send-knappen)blir det brukt label-taggen. De logiske gruppene er satt
+						inn i en ul-tag, videre i li-tagger. Som nevnt tidligere er det ikke logisk å bruke en table. Fordelen med en liste
+						er at rekkefølgen er mer logisk. Utenfor skjemaet er det en sjekkboks for å bekrefte opplysningene og en send-knapp.
+						Disse er plassert utenfor fieldset-taggen fordi de skal være lette å finne, og fordi de ikke har sammenheng med
+						å fylle ut skjemaet, men å få sendt skjemaet.</p>
+					<li>PHP: Først defineres variablene for de forksjellige feltene. Dersom de er fylt ut vil disse dataene legge seg inn
+						i disse variablene. Det defineres også variabler for som inneholder en feilmelding til brukeren. Om et obligatorisk
+						felt er tomt og knappen "send" blir trykket på, vil disse bli hentet fram. Feilmeldingene blir lagt inne i de
+						obligatoriske feltene og dukker opp som rød skrift etter brukeren har trykket send og feltet er tomt. Siste delen av
+						skjemaet er å sende dataene som en mail, inn til kundeservice. Her sjekker funksjonen om sjekkboks er huket av og
+						sendknappen trykket. Hvis de er det, sjekker den om alle de obligatoriske feltene er fylt ut. Hvis alt dette stemmer
+						vil den sende en mail med dataene fra skjemaet. Det er 4 ledd i en mail:
+					<ul>
+						<li>Til: $to. Henter mailen fra den brukeren skriver inn, så det kan sjekkes at mailen fungerer. Ellers ville
+							det selvsagt vært mailen til print.no.</li>
+						<li>Fra: $from. Henter mailen brukeren skriver inn.</li>
+						<li>Hva det gjelder: $subject. Henter hvilken kategori man huket av på radioknappene.</li>
+						<li>Spørsmålet og telefonnummer: $body. Henter spørsmålet og telefonnummeret til brukeren.</li>
+					</ul>
+						Vi bruker POST for å hente og snede ut disse dataene. Funksjonen sjekker også om "send" er trykket på og ikke
+						sjekkboksen er huket av. I det tilfellet vil det komme en feilmelding på at brukeren må bekrefte opplysningene.</li>
+					<li>CSS: For å få et lett leselig og oversiktelig skjema (også visuelt) ble mye gjort med strukturen i HTML'en, men
+						som å forstørre elementer og ha en lett leselig font, var med på å underbygge dette. Det var også viktig å vise
+						visuelt hvilke felter som er obligatoriske, det blir også forklart over skjemaet.</li>
+					<li>WCAG: WCAG er spesifikasjoner og krav som må oppfylles for å legge til rette for synshemmede. For å se strukturen,
+						se det som er skrevet om sidens HTML-struktur over.</li>
+					<li>WAI-ARIA: Det var forsøkt å tilfredstille WCAG-krav i skjemaet, og det som gjenstod var å fortelle en synhemmed at
+						et felt i skjema er obligatorisk å fylle ut eller huke av for å kunne sende inn skjemaet. For å gjøre dette brukte vi
+						"aria-required='true'".</li>
+				</ul>
+	</section>
+
+	<section id="Evaluering">
 		<h2>Evaluering</h2>
+			<h3>Teknologier</h3>
+				<ul>
+					<li>HTML: HTML har stort sett ikke vært et problem. Det viste seg etterhvert at vi ville trenge mye mer spesifikk
+						klassifisering av tag-ene enn vi først trodde. Dette for å identifisere hva som skulle styles i CSS og endres
+						i JQuery/JavaScript.</li>
+					<li>CSS: CSS-en var et adskillig større problem enn først antatt. I starten var vi bare enige om å ha en felles
+						CSS for rammen, og hadde ingen felles planer for undersidenes utseende. Det gjorde at når vi omsider fikk
+						samlet alt, var det et hav av kolliderende CSS som møtte oss. Vi brukte en del dager på å renske opp i CSS.
+						Ellers fungerte det veldig bra, når vi først fikk det ordnet.</li>
+					<li>JavaScript: </li>
+					<li>JQuery: Dette var en noenlunde vanskelig teknologi å bruke. Det var en del problemer med implementeringen
+						av knappene som skulle endre skriftstørrelse og -type, grunnet kolliderende id-er og metoder som ikke
+						fungerte. Problemene ble løst ved å bruke erstatningsmetoder. Følte allikevel dette var en grei måte å
+						lage funksjoner, siden det kan være greit å ha scriptet sammen med HTML-en for å ha ekstra god kontroll
+						på funksjonene.</li>
+					<li>PHP: PHP-en var et problem som snek seg innpå oss mot slutten, under valideringen ble det et stort problem
+						med å få PHP-en til å funke i de forskjellige undersidene, som det står beskrevet i beskrivelsen av
+						<a href="#Felles">Felles implementeringer</a> over. Men dette var stort sett problemer som skyldtes manglende
+						kommunikasjon og mangel på en felles løsning. Det ble løst, og etter dette fungerte PHP-en perfekt.
+						Når det kommer til spørsmålssiden, kunne koden vært ryddigere.
+						For mer ryddig kode kunne vi inkludert PHP'en i HTML-dokumentet. Vi hadde også lyst til å ekspandere
+						undersiden med en FAQ seksjon på siden, men for å få til det vi ville måtte vi ha brukt databaser,
+						noe ingen av oss har særlig kjennskap til. Det viktigste var å få gjort ferdig de opprinnelige kravspec'ene,
+						og i og med at det dukket opp uforutsatte problemer mot slutten, så ble det ikke tid til dette.</li>
+					<li>WAI-ARIA: For et par av oss var det et problem å lære seg WAI-ARIA. Carl skjønte blant annet ikke så mye
+						av det, og fikk derfor ikke implementert noe av teksten i hovedsiden. Simen og Eivind skjønte en god del
+						mer av det, og fikk implementert noe av deres tekst. Her ble det dessverre heller ikke gjort særlig mye,
+						selv om de prøvde en god del for å få det til. De lastet også ned "Thunder screenreader" for å kontrollere
+						at skjemaet kunne fungert for en synshemmed, men fikk ikke programmet til å fungere på nettet i det hele
+						tatt. Det fungerte bare på desktop for Simen sin del. Vi kunne ha satt meg mer inn i dette programmet, evt.
+						lastet ned et annet program. For på dette tidpunktet er vi ikke 100% sikker på om skjemaet er godt nok for
+						en synshemmet person.</li>
+				</ul>
 
+			<h3>Verktøy</h3>
+				<ul>
+					<li>NotePad</li>
+					<li>TextPad: Dette var et av de mest primære verktøyene. Mye av programteksten ble skrevet inn her.</li>
+					<li>Firefox og Chrome</li>
+					<li>GitHub: GitHub har vært en viktig del av prosjektet, både på godt og vondt. Bruken av den gjorde at vi
+						kunne jobbe veldig individuelt og dele alt vi gjorde med hverandre. Men med tiden viste det seg at den
+						store graden av frihet i arbeidet ga en svært manglende struktur i nesten alt i starten. Dermed ble det
+						til t GitHub-samarbeidet ikke ble utnyttt til det fulle, og siden ble etterhvert svært rotete ør vi tok
+						en felles rensing og plasserte alt i en oversiktlig mappestruktur som vi lett kunne dele med hverandre.
+						Selv om siden til tider har vært veldig uovesiktlig, har den bidratt til at alle har kunnet holde seg
+						oppdatert på hverandres arbeid.</li>
+					<li>Inkscape</li>
+					<li>GIMP</li>
+					<li>WCAG</li>
+					<li>NetBeans</li>
+				</ul>
+
+			<h3>Arbeidsmetode</h3>
+				<p>Som nevnt i <a href="#Arbeid">Arbeidsmetode</a> og i <a href="#Milepæl">Milepælsplanen</a> hadde vi en veldig fri
+				   arbeidsplan som til slutt holdt på å slå tilbake på oss. Ved å arbeide fritt hadde vi den fordelen at vi ikke var
+				   avhengige av hverandre for å få gjort alt vi måtte. Vi kunne jobbe når vi ville og hvor vi ville. Men den
+				   manglende sentralstyringen frittstående arbeidsposisjonen førte til manglende struktur og dårlig kommunikasjon.
+				   Hele prosjektet lå i en svær, uorganisert haug når vi omsider fikk samlet alt, hvilket gjorde at vi unngikk
+				   et stort problem ved å samle alt tre dager før fristen. Vi fikk på den måten ekstra tid til å fikse problemene og
+				   fikk reddet prosjektet. Alt i alt var det fra starten av mangel på kommunikasjon, noe som ble kraftig forbedret
+				   de siste to ukene av prosjektet</p>
+
+			<h3>Milepælsplanen</h3>
+				<p>Selv om milepælsplanen i utgangspunktet ikke var noen dårlig plan for våre arbeidsmål, endte det med at den ble langt
+				   mindre gjeldende enn vi trodde. Som nevnt mange ganger nå var mangelen på kommunikasjon en faktor, og den ble
+				   avgjørende. En ting var at PHP-en var ferdig svært tidlig, og derfor ikke ble aktuelt mot slutten før feilen
+				   som er nevnt i <a href="#Felles">Felles implementeringer</a> ble oppdaget. Men når vi hadde en såpass rotete
+				   GitHub-side, kolliderende CSS og HTML-tagger, såvel som at den avsluttende rapporten ble mye større enn først antatt,
+				   gjorde det at milepælsplanen ble forskjøvet, slik at vi samlet alt tidligere og begynte på rapporten tidligere.</p>
+	</section>
+
+	<section id="Konklusjon">
 		<h2>Konklusjon</h2>
+			<p>Siden ble ferdig i tide, vi ble godt fornøyd med resultatet og godt fornøyd med innsatsen. Men det var ikke en lett
+			   kjøpt seier. En stund lå prosjektet i fare på grunn av den før nevnte mangelen på struktur og kommunikasjon. Selv om vi
+			   fikk til mye når vi arbeidet individuelt, var det mye bedre og mer oversiktlig når alt var samlet og alt ble endret i
+			   fellesskap.</p>
 
-		<h2>Litteraturliste</h2>
+			<p>Av alle arbeidsmetodene fikk vi størst problemer med CSS. Dette var et problem som kunne vært unngått om vi hadde hatt
+			   litt mer kommunikasjon i starten. Det ble jobbet mye med WAI-ARIA, uten at vi fikk til alt for
+			   mye. Men WAI-ARIA var noe vi ble enige om å bruke kun hvis vi hadde god nok tid. Til slutt måtte vi droppe WAI-ARIA på
+			   hovedsiden og designsiden. Det tok rett og slett for lang tid.</p>
 
-		<h2>Begrepsliste</h2>
+			<p>Konklusjonen må derfor bli at selv om prosjektet gikk bra, kunne det gått enda bedre hvis vi hadde hatt et litt tettere
+			   samarbeid tidligere.</p>
 
-		<h2>Vedlegg</h2>
+	</section>
+
+		<h2 id="Begrep">Begrepsliste</h2>
+			<ul>
+				<li>HTML - Hyper Text Markup Language. Er basisen for nettsiden, her ligger sidens innhold. Bruker en rekke tagger
+					for å skille mellom forskjellige deler av teksten, vi bruker den nyeste versjonen, HTML5.</li>
+				<li>CSS - Cascading Style Sheet. Er en form for fil lagret som .css der man kan utforme utseendet på en HTML5-side.
+					Dette kan man gjøre ved å gi attributter til forskjellige semantiske tagger, eller deres id-er eller klasser.</li>
+				<li>JavaScript - Oppretter funksjoner som kan endre inntrykket på en HTML-side, ved å bruke en lang rekke funksjoner
+					til å påvirke HTML-innholdet. Ligger på et eget ark lagret som .js. Blir også omtalt som JS.</li>
+				<li>JQuery - Har samme funksjon som JavaScript, men ligger inni HTML-siden som den skal endre. Både JS og Jquery
+					funker ved å lage en lenke til et program eller en side som har en fil som trengs for å kjøre JS eller JQuery.</li>
+				<li>PHP - Hypertext Preprocessor. I likhet med JS og JQuery er det scriptteknologi, men til forskjell fra disse kan
+					PHP skrives rett inn i et HTML-dokument uten å måtte lenke til en ekstern fil for å kjøre.</li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+
+		<h2 id="Vedlegg">Vedlegg</h2>
 
 	</body>
 </html>
