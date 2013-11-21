@@ -106,11 +106,11 @@ min-width: 540px;
 #forsideDiv{
     background-color: #333333;
     margin-top: 93px;
-    width: 1377px;
     margin-bottom: -152px;
     padding-top: 30px;
     padding-bottom: 30px;   
     margin-left: -35px;
+    margin-right: -35px;
     border-bottom: 10px solid lightblue;
     
 }
