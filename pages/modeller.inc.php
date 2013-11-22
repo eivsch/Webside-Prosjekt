@@ -17,7 +17,7 @@
 	      <p> Det finnes svært mange modeller, og
 		     prisene kan variere fra noen tusenlapper, til millioner av kroner. Idag regnes
 			 3D-Printerne til under 30 000 kr som billige, disse har bare vært på markedet i 2-3 år.
-			 I valget av printer er det lurt å være klar over hva slags printerteknologi modellen den bruker.
+			 I valget av printer er det lurt å være klar over hva slags printerteknologi modellen bruker.
 			 Dersom du f.eks. ønsker deg en printer til hjemmebruk, vil en FDM-maskin være et naturlig valg.
 			 Det står for Fused Deposition Modeling, og denne typen maskiner er de klart billigste. Det finnes såklart også
 			 nyere teknologier som gir både raskere og mer detaljert printing, men det tar tid før disse synker i pris. Les mer om ulike typer maskiner
