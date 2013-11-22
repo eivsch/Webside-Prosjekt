@@ -21,7 +21,8 @@
 		<h2>Forord</h2>
 		<p>Dette prosjektet er et samarbeid mellom oss fire i anledning at det er avsluttende prosjekt for Webprosjekt.
 		   Vi skulle lage en nettside om et valgfritt emne som vi ble enige om i fellesskap, og opprette siden ved bruk av
-		   metodene vi hadde blitt lært i Webprosjekt.</p>
+		   metodene vi hadde blitt lært i Webprosjekt. Vi hadde en rekke krav som vi satte til oss selv, pluss noen krav
+		   til siden, som validering, hvilke teknologier som var lov til å bruke, og så videre.</p>
 
 		<h2>Innhold</h2>
 		<ul>
@@ -32,6 +33,7 @@
 			<li><a href="#Konklusjon">Konklusjon</a></li>
 			<li><a href="#Begrep">Begrepsliste</a></li>
 			<li><a href="#Vedlegg">Vedlegg</a></li>
+			<li><a href="#Referanse">Referanser</a></li>
 		</ul>
 
 		<section id="Innledning">
@@ -89,6 +91,8 @@
 						<li>Inkscape</li>
 						<li>GIMP</li>
 						<li>WCAG</li>
+						<li>NetBeans</li>
+						<li>Xampp</li>
 					</ul>
 
 				<h3 id="Arbeid">Arbeidsmetode</h3>
@@ -149,10 +153,17 @@
 				<p>Denne siden består av en hovedside og tre undersider. Hovedsiden gir et lite innblikk i 3D-printingens historie. En av undersidene
 				   heter spørsmål, her kan man sende inn spørsmål til administratoren. Den andre undersiden viser flere forskjellige modeller
 				   av 3D-printere, og den siste viser en rekke nedlastbare 3D-design. Siden har et felles rammeverk, som består av en header med
-				   en menylinje, samt en footer med facebook-lenke, navigasjon og kontakside.</p>
+				   en menylinje, samt en footer med facebook-lenke, navigasjon og kontaksideSidens generelle css skulle være gjennomgående i alle sidene,
+				   for en mer strukturert og oversiktelig side. Her tenkte vi at siden 3dprint.no er en bedriftsside burde den fremstå seriøs. En seriøs
+				   side i våre øyne fokuserer på enkelhet, stilrene fonter, ikke for mye distraksjoner på siden, og et fokus på at
+				   informasjonen kommer tydelig fram til brukeren. Det var viktig å lage en generell css etter at alle sidene var
+				   samlet, siden alle hadde sin egen css for sin egen side. Å lage en generell css er med på å samle undersidene og
+				   hovedsiden mer.</p>
 
 			<h3>Sidenes struktur</h3>
 				<h4>Hovedsidens struktur:</h4>
+				<p>Dette var defaultsiden, den siden som var implementert ved oppstart. Her la vi et innblikk i historien og
+				   utviklingen til 3D-printingen.</p>
 				<ul>
 					<li>Den består av en uthevet skrift øverst, som ønsker deg velkommen til siden, og forklarer bakgrunnen </li>
 				    <li>Deretter kommer en tekst om 3D-printingens historie. Ved å trykke på linken som heter 'les mer/mindre om
@@ -189,6 +200,11 @@
  				</ul>
 
  				<h4>Designsidens struktur</h4>
+ 				<p>Denne undersiden inneholder en rekke design som man kan laste ned og 3D-printe på egen hånd.</p>
+ 				<ul>
+ 					<li>Undersiden min består av ett ikon, en overskrift og seks bokser med 3DM-filer, en type fil til 3D-printing.</li>
+ 					<li>Hver av de seks boksene består av fire elementer: Overskrift, et bilde, tekst og nedlastningsknapp</li>
+ 				</ul>
 
  			<h3 id="Felles">Felles implementeringer</h3>
  				<ul>
@@ -205,7 +221,11 @@
  					<li>JavaScript: implementerer menylinjens funksjon.</li>
  					<li>CSS: Alle sidene sin CSS blir implementert i rammen. En PHP-funksjon gjør at CSS-sidene linker til forskjellige
  						stilark. dette måtte vi gjøre fordi HTML-en ikke validerte med flere body-tager og head-tager. Dermed måtte alt
- 						inkluderes i rammen og skilles for hver side.</li>
+ 						inkluderes i rammen og skilles for hver side. Fonten "bonvenocflight" brukes til overskrifter og viktig tekst.
+ 						Det er 3 farger som er gjennomgående på siden. Fargene representeres på forsiden og fargene har etterhvert
+ 						hver sin tilknytning til elementer på sidene. For at siden skal være oversiktelig og at den skal være lett
+ 						leselig er det viktig med luft på siden. Det er gjort med å skille elementer med gode mellomrom, og
+						mellomrom mellom bokstavene i overskrifter og logo.</li>
  					<li>JQuery: Jquery implementerer to knapper, den ene har bokstaven 'A', mens den andre har 'a'. Når man først kommer
  				   		inn på siden, er 'a'-knappen deaktivert og 'A'-knappen er aktivert. Ved å trykke på 'A'-knappen, deaktiveres den,
  				   		'a'-knappen aktiveres og teksten blir ti piksler større og får font-typen sans-serif. Ved å trykke på 'a'-knappen
@@ -283,6 +303,17 @@
 						et felt i skjema er obligatorisk å fylle ut eller huke av for å kunne sende inn skjemaet. For å gjøre dette brukte vi
 						"aria-required='true'".</li>
 				</ul>
+
+			<h4>Designsidens implementeringer</h4>
+				<p>Undersiden design.inc.php inneholder kun html og css. I tillegg til den globale css'en inneholder den en
+ 				   egen css, stylesheet2.css. Verktøy brukt: Netbeans, Xampp, Github og Photoshop Elements.</p>
+ 				<ul>
+ 					<li>HTML: Alle de fire elementene er plassert i en section-tag, som jeg kopierte fem ganger og plasserte på siden.
+ 						Slik fikk alle boksene på undersiden den samme layouten.</li>
+ 					<li>Mesteparten av tiden gikk med på å lage CSS'en. Vi ga en id til alle elementene vi skulle bruke på denne
+ 						siden, slik at CSS-en ikke krasjet med den globale.</li>
+
+ 				</ul>
 	</section>
 
 	<section id="Evaluering">
@@ -329,7 +360,7 @@
 					<li>GitHub: GitHub har vært en viktig del av prosjektet, både på godt og vondt. Bruken av den gjorde at vi
 						kunne jobbe veldig individuelt og dele alt vi gjorde med hverandre. Men med tiden viste det seg at den
 						store graden av frihet i arbeidet ga en svært manglende struktur i nesten alt i starten. Dermed ble det
-						til t GitHub-samarbeidet ikke ble utnyttt til det fulle, og siden ble etterhvert svært rotete ør vi tok
+						til at GitHub-samarbeidet ikke ble utnyttet til det fulle, og siden ble etterhvert svært rotete før vi tok
 						en felles rensing og plasserte alt i en oversiktlig mappestruktur som vi lett kunne dele med hverandre.
 						Selv om siden til tider har vært veldig uovesiktlig, har den bidratt til at alle har kunnet holde seg
 						oppdatert på hverandres arbeid.</li>
@@ -337,6 +368,9 @@
 					<li>GIMP</li>
 					<li>WCAG</li>
 					<li>NetBeans</li>
+					<li>Xampp: Sidene var i PHP, og kunne derfor ikke vises som vanlige HTML-dokumenter. Derfor måtte Xampp,
+						allerede installert, tas i bruk. Det var nyttig til å få se hvordan sidene ser ut, og hvordan endringer
+						i script og CSS påvirket sidene.</li>
 				</ul>
 
 			<h3>Arbeidsmetode</h3>
@@ -360,18 +394,29 @@
 
 	<section id="Konklusjon">
 		<h2>Konklusjon</h2>
-			<p>Siden ble ferdig i tide, vi ble godt fornøyd med resultatet og godt fornøyd med innsatsen. Men det var ikke en lett
-			   kjøpt seier. En stund lå prosjektet i fare på grunn av den før nevnte mangelen på struktur og kommunikasjon. Selv om vi
-			   fikk til mye når vi arbeidet individuelt, var det mye bedre og mer oversiktlig når alt var samlet og alt ble endret i
-			   fellesskap.</p>
 
-			<p>Av alle arbeidsmetodene fikk vi størst problemer med CSS. Dette var et problem som kunne vært unngått om vi hadde hatt
+			<p>Vår tidsplan ble mer eller mindre oppfylt, men ble mot slutten forskjøvet da det var nødvendig å framskynde deler av
+			   planen siden rapportskriving og finjustering tok lengre tid enn nødvendig. Planen vi hadde kunne blitt oppfylt i større
+			   grad hvis vi hdde hatt litt mer styrt samarbeid, men fortsatt ikke fullstendig. Vi hadde en litt feil vurdering av
+			   hvor lang tid det ville ta å lage PHP og den endelige rapporten. Vi oppdaget de to siste ukene dette, og brukte
+			   mye tid på å skrive rapport og rette opp småfeil.</p>
+
+			<p>Av alle teknolgiene fikk vi størst problemer med CSS. Dette var et problem som kunne vært unngått om vi hadde hatt
 			   litt mer kommunikasjon i starten. Det ble jobbet mye med WAI-ARIA, uten at vi fikk til alt for
 			   mye. Men WAI-ARIA var noe vi ble enige om å bruke kun hvis vi hadde god nok tid. Til slutt måtte vi droppe WAI-ARIA på
 			   hovedsiden og designsiden. Det tok rett og slett for lang tid.</p>
 
+			<p>Siden ble ferdig i tide, vi ble godt fornøyd med resultatet og godt fornøyd med innsatsen. Men det var ikke en lett
+			   kjøpt seier. En stund lå prosjektet i fare på grunn av den før nevnte mangelen på struktur og kommunikasjon.
+			   Selv om vi fikk til mye når vi arbeidet individuelt, var det mye bedre og mer oversiktlig når alt var samlet
+			   og alt ble endret i fellesskap. Men da handler det ikke så mye om kommunikasjon som arbeid. Hver av oss visste
+			   nemlig ofte hva de andre drev med, men visste ikke hvordan arbeidet deres så ut. Å kunne se nærmere på hver
+			   enkelt side av saken i fellesskap vil derfor være viktig, ikke bare gi en kjapp oppdatering om hvordan det
+			   går. Litt for mye holdt på å gå galt når vi samlet alt.</p>
+
 			<p>Konklusjonen må derfor bli at selv om prosjektet gikk bra, kunne det gått enda bedre hvis vi hadde hatt et litt tettere
-			   samarbeid tidligere.</p>
+			   samarbeid tidligere. Vi vil derfor ta med oss den lærdommen i fremtidige prosjekt der det er en viss mulighet for å
+			   gå i liknende feller. </p>
 
 	</section>
 
@@ -387,13 +432,23 @@
 					funker ved å lage en lenke til et program eller en side som har en fil som trengs for å kjøre JS eller JQuery.</li>
 				<li>PHP - Hypertext Preprocessor. I likhet med JS og JQuery er det scriptteknologi, men til forskjell fra disse kan
 					PHP skrives rett inn i et HTML-dokument uten å måtte lenke til en ekstern fil for å kjøre.</li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
+				<li>Semantiske tagger - Elementer som man bruker i HTML5 for å sette opp og strukturere nettsiden. Enkelte tagger
+					er nødvendige for å se siden, som f. eks. body-taggen.</li>
+				<li>ID - man gir en tag en id for å kunne identifisere den spesielt i tilfellet at man skal endre spesielt på
+					akkurat denne taggen. Markeres med id="navn" og kan kalles med "#navn".</li>
+				<li>Class - fungerer på samme måte som id. Markeres med class="navn" og kan kalles med ".navn".</li<
 			</ul>
 
 		<h2 id="Vedlegg">Vedlegg</h2>
+		<ul>
+			<li><a href="">Den ferdige siden</a></li>
+			<li><a href="">Forprosjektrapporten</a></li>
+			<li><a href="">Ekstern kode</a></li>
+		</ul>
 
+		<h2 id="Referanse">Referanser</h2>
+		<ul>
+			<li>Hvor vi fikk menyen fra: http://www.menucool.com/horizontal/menu-code?menu=3&skin=1&p=1</li>
+		</ul>
 	</body>
 </html>
