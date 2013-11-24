@@ -6,6 +6,19 @@
     font-style: normal;
 }
 
+body{
+  background-color: #bcf;
+}
+
+#content{
+background-color:#fff;
+max-width: 1170px;
+margin-left:auto;
+margin-right:auto;
+padding-bottom:40px;
+margin-top:-10px;
+}
+
 h1 {
 
 font-family: bonvenocflight, helvetica, arial;
@@ -22,7 +35,6 @@ h2{
     font-family: bonvenocflight, helvetica, arial;
     letter-spacing:2px;
     border-bottom: 2px solid red;
-    border-top: 2px solid red;
     width: 300px;
 }
 
@@ -62,7 +74,7 @@ margin-left: -8px;
 }
 
 .top{
-margin-top: 152px;    
+margin-top: 152px;
 }
 
 section {
@@ -108,20 +120,15 @@ min-width: 540px;
 
 #forsideDiv{
     background-color: #333333;
-    margin-top: 10%;
+    margin-top: 142px;
     margin-bottom: -152px;
-    padding-top: 30px;
-    padding-bottom: 30px;   
-    margin-left: -35px;
-    margin-right: -35px;
+    padding-top: 40px;  
+    margin-left: -207px;
+    margin-right: -207px;
     border-bottom: 10px solid lightblue;
-    
+    text-align: center;    
 }
 
-#forsideDiv{
-    text-align: center;
-
-}
 
 .forside{
     display: inline-block;
@@ -130,32 +137,15 @@ min-width: 540px;
 }
 
 #velkommenh1{
-    font-family: bonvenocflight, helvetica, arial;
+     font-family: bonvenocflight, helvetica, arial;
      background-color: #333333;
      color: lightblue;
      font-size: 4.5em;
      letter-spacing: 10px;
-     position: absolute;
-     left: 20px;
-}
-#tilh1{
-    background-color: #333333;
-     position: absolute;
-     color: lightblue;
-     left: 25%;
-     top: 39%;
-     font-size: 4em;
-     letter-spacing: 8px;
-}
-
-#printh1{
-    background-color: #333333;
-    color: lightblue;
-     position: absolute;
-     left: 10.4%;
-     top: 51%;
-     font-size: 4em;
-     letter-spacing: 8px;
+     max-width:1500px;
+     min-width:900px;
+     margin-top: 10px;
+     margin-bottom:10px;
 }
 .velkommen{
     color: #fff;
@@ -183,6 +173,7 @@ min-width: 540px;
 
 .ikoner{
     margin-left: 150px;
+    margin-top:35px;
 }
 
 .footerContent{
@@ -250,6 +241,8 @@ ul{
   letter-spacing: 2px;
 }
 
+#merTekst{font-size: 1.1em;}
+
 footer {
 	clear:both;
 	background-color: #333333;
@@ -257,6 +250,6 @@ footer {
         margin-left: -8px;
         margin-right: -8px;
         margin-bottom: -8px;
-        margin-top: 100px;
+        margin-top:;
         
 }

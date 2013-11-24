@@ -1,12 +1,6 @@
-
             <div id="forsideDiv">
-                <h1 id="velkommenh1">Velkommen</h1>
-                <h1 id="tilh1">til</h1>
-                <h1 id="printh1">3d-print!</h1>
-                <div id="forsideMargin">
             <img  class="forside" src="bilder/forside.png" alt="Bildet av 3d-printer"><img class="forside" src="bilder/forside2.png" alt="Bildet av 3d-printer">
-
-                </div>
+            <h1 id="velkommenh1">Velkommen til 3D-Print!</h1>
             </div>
 	<section class="top">
             <p class="velkommen">...den offisielle informasjonssiden for <span class="black">3D-printing.</span>

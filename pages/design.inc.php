@@ -2,8 +2,7 @@
         <section class="top">
             <img class="ikoner" id="ikontest" src="bilder/ikoner/designIkon.png" alt="Design ikon">
             <h1 class="undersiderOverskrift" id="overskrift">3D-filer</h1>
-        <div id="test">
-            </div>
+
             <section id="design1">
                 <h1 id="h1">Nokia-deksel</h1>
                 <p id="tekst1">
@@ -19,10 +18,10 @@
                     <!-- Alle nedlastningslinkene er de samme. Les mer i rapporten under punkt X. -->
                         <button class="buttonStyle" type="submit" id="lastned1">Last ned</button>
                     </form>
-                
+
                 <!--</div>-->
             </section>
-            
+
             <section id="design2">
                 <h1 id="h2">Hånd med golfball</h1>
                 <p id="tekst2">
@@ -39,7 +38,7 @@
                     </form>
                 <!--</div>-->
             </section>
-            
+
             <section id="design3">
                 <h1 id="h3">Datamus</h1>
                 <p id="tekst3">
@@ -56,7 +55,7 @@
                     </form>
                 <!--</div>-->
             </section>
-            
+
             <section id="design4">
                 <h1 id="h4">Veener Audio-speaker</h1>
                 <p id="tekst4">
@@ -73,7 +72,7 @@
                     </form>
                 <!--</div-->
             </section>
-            
+
             <section id="design5">
                 <h1 id="h5">058 Stol</h1>
                 <p id="tekst5">
@@ -90,7 +89,7 @@
                     </form>
                 <!--</div>-->
             </section>
-            
+
             <section id="design6">
                 <h1 id="h6">Fiolin</h1>
                 <p id="tekst6">

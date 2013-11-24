@@ -93,8 +93,8 @@
 			<ul>
 				<li><a href="index.php">Startsiden</a></li>
 				<li><a href="index.php?p=modeller">Modeller</a></li>
-				<li><a href="index.php?p=sporsmol">Spørsmål</a></li>
 				<li><a href="index.php?p=design">Design</a></li>
+				<li><a href="index.php?p=sporsmol">Spørsmål</a></li>
 			</ul>
 		</div>
                     </nav>

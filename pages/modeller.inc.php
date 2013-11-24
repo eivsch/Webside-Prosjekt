@@ -13,7 +13,7 @@
 	  </div>
 
 	    <div class="infoText">
-                <h2>Har du planer om å kjøpe 3D-Printer?</h2>
+                <h3>Har du planer om å kjøpe 3D-Printer?</h3>
 	      <p> Det finnes svært mange modeller, og
 		     prisene kan variere fra noen tusenlapper, til millioner av kroner. Idag regnes
 			 3D-Printerne til under 30 000 kr som billige, disse har bare vært på markedet i 2-3 år.
@@ -25,7 +25,7 @@
              </p>
 		</div>
 		<div class="infoText">
-		<h2>Er du interessert i 3D-Printere?</h2>
+		<h3>Er du interessert i 3D-Printere?</h3>
 	      <p> Med en 3D-Printer kan du skrive ut masse forskjellige
 		     plastdingser hjemme i din egen stue. Det er til og med blitt printet ut fullt fungerende
 			 våpen med enkle 3D-printere. Av andre ting kan også nevnes flytende metall, mikrobatteri og NASA
